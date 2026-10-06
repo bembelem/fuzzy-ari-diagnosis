@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="880" viewBox="0 0 620 880" font-family="Times New Roman" font-size="15" fill="none" stroke="#000" stroke-width="1.4">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000" stroke="none"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="620" height="880" fill="#fff" stroke="none"/>
+
+  <!-- 1 Начало -->
+  <rect x="235" y="15" width="150" height="40" rx="20" fill="#fff"/>
+  <text x="310" y="40" text-anchor="middle" fill="#000" stroke="none">Начало</text>
+  <line x1="310" y1="55" x2="310" y2="80" marker-end="url(#a)"/>
+
+  <!-- 2 Ввод -->
+  <polygon points="175,80 465,80 445,130 155,130" fill="#fff"/>
+  <text x="310" y="101" text-anchor="middle" fill="#000" stroke="none">Ввод температуры тела и словесных</text>
+  <text x="310" y="120" text-anchor="middle" fill="#000" stroke="none">оценок выраженности симптомов</text>
+  <line x1="310" y1="130" x2="310" y2="155" marker-end="url(#a)"/>
+
+  <!-- 3 Формирование A -->
+  <rect x="150" y="155" width="320" height="60" fill="#fff"/>
+  <text x="310" y="180" text-anchor="middle" fill="#000" stroke="none">Формирование нечёткого множества A:</text>
+  <text x="310" y="201" text-anchor="middle" fill="#000" stroke="none">x<tspan dy="4" font-size="11">1</tspan><tspan dy="-4"> по формуле (15), x</tspan><tspan dy="4" font-size="11">2</tspan><tspan dy="-4">, …, x</tspan><tspan dy="4" font-size="11">9</tspan><tspan dy="-4"> по шкале термов</tspan></text>
+  <line x1="310" y1="215" x2="310" y2="240" marker-end="url(#a)"/>
+
+  <!-- 4 Сходство -->
+  <rect x="150" y="240" width="320" height="60" fill="#fff"/>
+  <text x="310" y="265" text-anchor="middle" fill="#000" stroke="none">Вычисление степеней сходства S(A, E<tspan dy="4" font-size="11">k</tspan><tspan dy="-4">),</tspan></text>
+  <text x="310" y="286" text-anchor="middle" fill="#000" stroke="none">k = 1, …, 5, по формулам (11) и (12)</text>
+  <line x1="310" y1="300" x2="310" y2="325" marker-end="url(#a)"/>
+
+  <!-- 5 Упорядочение -->
+  <rect x="150" y="325" width="320" height="60" fill="#fff"/>
+  <text x="310" y="350" text-anchor="middle" fill="#000" stroke="none">Упорядочение степеней сходства:</text>
+  <text x="310" y="371" text-anchor="middle" fill="#000" stroke="none">S(1) ≥ S(2) ≥ … ≥ S(5)</text>
+  <line x1="310" y1="385" x2="310" y2="410" marker-end="url(#a)"/>
+
+  <!-- 6 Решение: порог -->
+  <polygon points="310,410 410,460 310,510 210,460" fill="#fff"/>
+  <text x="310" y="465" text-anchor="middle" fill="#000" stroke="none">S(1) ≥ α ?</text>
+  <line x1="410" y1="460" x2="454" y2="460" marker-end="url(#a)"/>
+  <text x="425" y="452" text-anchor="middle" fill="#000" stroke="none">нет</text>
+  <polygon points="462,420 616,420 600,500 446,500" fill="#fff"/>
+  <text x="531" y="444" text-anchor="middle" fill="#000" stroke="none">«Картина</text>
+  <text x="531" y="464" text-anchor="middle" fill="#000" stroke="none">нетипична, нужно</text>
+  <text x="531" y="484" text-anchor="middle" fill="#000" stroke="none">обследование»</text>
+  <text x="325" y="528" text-anchor="start" fill="#000" stroke="none">да</text>
+  <line x1="310" y1="510" x2="310" y2="540" marker-end="url(#a)"/>
+
+  <!-- 7 Решение: разрыв -->
+  <polygon points="310,540 420,590 310,640 200,590" fill="#fff"/>
+  <text x="310" y="595" text-anchor="middle" fill="#000" stroke="none">S(1) − S(2) ≥ δ ?</text>
+  <line x1="200" y1="590" x2="186" y2="590" marker-end="url(#a)"/>
+  <text x="212" y="575" text-anchor="middle" fill="#000" stroke="none">нет</text>
+  <polygon points="32,532 192,532 176,662 16,662" fill="#fff"/>
+  <text x="104" y="555" text-anchor="middle" fill="#000" stroke="none">Диагноз k(1);</text>
+  <text x="104" y="577" text-anchor="middle" fill="#000" stroke="none">«нельзя исключить»</text>
+  <text x="104" y="599" text-anchor="middle" fill="#000" stroke="none">заболевания</text>
+  <text x="104" y="621" text-anchor="middle" fill="#000" stroke="none">с S(1) − S(k) &lt; δ</text>
+  <text x="104" y="643" text-anchor="middle" fill="#000" stroke="none">и S(k) ≥ α</text>
+  <text x="325" y="658" text-anchor="start" fill="#000" stroke="none">да</text>
+  <line x1="310" y1="640" x2="310" y2="665" marker-end="url(#a)"/>
+
+  <!-- 8 Однозначный диагноз -->
+  <polygon points="175,665 465,665 445,715 155,715" fill="#fff"/>
+  <text x="310" y="686" text-anchor="middle" fill="#000" stroke="none">Предварительный диагноз k(1)</text>
+  <text x="310" y="705" text-anchor="middle" fill="#000" stroke="none">со степенью уверенности S(1)</text>
+  <line x1="310" y1="715" x2="310" y2="740" marker-end="url(#a)"/>
+  <polyline points="96,662 96,727 310,727"/>
+
+  <!-- 9 Пояснение -->
+  <rect x="150" y="740" width="320" height="60" fill="#fff"/>
+  <text x="310" y="765" text-anchor="middle" fill="#000" stroke="none">Вывод симптомов с наибольшими</text>
+  <text x="310" y="786" text-anchor="middle" fill="#000" stroke="none">расхождениями |μ<tspan dy="4" font-size="11">A</tspan><tspan dy="-4">(x</tspan><tspan dy="4" font-size="11">i</tspan><tspan dy="-4">) − μ</tspan><tspan dy="4" font-size="11">E</tspan><tspan dy="-4">(x</tspan><tspan dy="4" font-size="11">i</tspan><tspan dy="-4">)|</tspan></text>
+  <line x1="310" y1="800" x2="310" y2="825" marker-end="url(#a)"/>
+
+  <!-- 10 Конец -->
+  <rect x="235" y="825" width="150" height="40" rx="20" fill="#fff"/>
+  <text x="310" y="850" text-anchor="middle" fill="#000" stroke="none">Конец</text>
+  <polyline points="523,500 523,845 385,845" marker-end="url(#a)"/>
+</svg>
