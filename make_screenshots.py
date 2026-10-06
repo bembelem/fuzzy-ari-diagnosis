@@ -42,14 +42,9 @@ with sync_playwright() as p:
     # рис. 4: эталоны
     page.goto(URL + "?page=Эталоны")
     wait_ready(page, "Сходство эталонов между собой")
+    page.locator("canvas").first.wait_for(timeout=60000)
+    page.wait_for_timeout(6000)
     page.screenshot(path=OUT / "fig4_etalons.png", full_page=True)
 
-    # рис. 5: оценка качества на синтетической выборке
-    page.goto(URL + "?page=Оценка качества")
-    wait_ready(page, "Источник данных")
-    page.get_by_text("Синтетическая выборка", exact=False).first.click()
-    wait_ready(page, "Матрица ошибок")
-    page.wait_for_timeout(4000)
-    page.screenshot(path=OUT / "fig5_quality.png", full_page=True)
     browser.close()
 print("готово:", sorted(x.name for x in OUT.glob("fig*.png")))

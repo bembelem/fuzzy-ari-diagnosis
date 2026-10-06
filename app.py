@@ -2,13 +2,10 @@
 
 Запуск:  .venv\\Scripts\\streamlit run app.py
 """
-import numpy as np
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
 
-import evaluation as ev
 import model as m
 
 st.set_page_config(page_title="Нечёткая диагностика ОРЗ", page_icon="🩺", layout="wide")
@@ -16,7 +13,7 @@ st.set_page_config(page_title="Нечёткая диагностика ОРЗ", 
 # ---------- параметры модели (боковая панель) ----------
 st.sidebar.header("Параметры модели")
 metric = m.METRIC
-st.sidebar.markdown("**Мера близости:** евклидова, формулы (11) и (12)")
+st.sidebar.markdown("**Мера близости:** евклидова, формулы (9) и (11)")
 alpha = st.sidebar.number_input("Порог сходства α", 0.40, 0.90, m.ALPHA, 0.01, format="%.2f")
 st.sidebar.caption("Если сходство пациента ни с одним заболеванием не достигает α, "
                    "картина считается нетипичной и модель не ставит диагноз.")
@@ -29,32 +26,12 @@ if "etalons" not in st.session_state:
 etalons = st.session_state.etalons.copy()
 
 st.title("Нечёткая модель дифференциальной диагностики ОРЗ")
-PAGES = ["Диагностика", "Эталоны", "Оценка качества", "Анализ чувствительности"]
+PAGES = ["Диагностика", "Эталоны"]
 _qp = st.query_params.get("page")  # позволяет открыть вкладку по ссылке, например ?page=Эталоны
 if "page" not in st.session_state and _qp in PAGES:
     st.session_state.page = _qp
 page = st.radio("Раздел", PAGES, horizontal=True, label_visibility="collapsed", key="page")
 st.divider()
-
-
-@st.cache_data(show_spinner="Расчёт показателей…")
-def cached_evaluate(X, y, E, alpha, delta, metric, n_boot=500):
-    return ev.evaluate(X, y, E, alpha, delta, metric, n_boot=n_boot)
-
-
-@st.cache_data(show_spinner="Обучение модели сравнения…")
-def cached_baseline(X, y):
-    return ev.baseline_logreg(X, y)
-
-
-@st.cache_data(show_spinner="Анализ устойчивости…")
-def cached_robust(X, E, eps, alpha, delta, metric):
-    return ev.robustness_expert(X, E, eps, 50, alpha=alpha, delta=delta, metric=metric)
-
-
-@st.cache_data(show_spinner="Перебор параметров…")
-def cached_grid(X, y, E, metric):
-    return ev.grid_alpha_delta(X, y, np.round(np.arange(0.4, 0.71, 0.05), 2), [0.0, 0.03, 0.05, 0.08, 0.1], E, metric)
 
 
 # короткие подписи для шкалы термов (п. 2.2) и шкалы осмотра
@@ -140,7 +117,7 @@ if page == "Диагностика":
 
 # ---------- вкладка 2: эталоны ----------
 elif page == "Эталоны":
-    st.subheader("Эталонные нечёткие множества (таблица 5)")
+    st.subheader("Эталонные нечёткие множества (таблица 4)")
     st.caption("Значения можно редактировать; экспертные значения (прямой метод) помечены в таблице курсовой звёздочкой.")
     df_e = pd.DataFrame(st.session_state.etalons, index=m.DISEASES, columns=m.FEATURE_CODES)
     edited = st.data_editor(df_e, use_container_width=True,
@@ -154,84 +131,9 @@ elif page == "Эталоны":
         st.session_state.etalons = m.ETALONS.copy()
         st.rerun()
 
-    st.subheader("Сходство эталонов между собой (таблица 6)")
+    st.subheader("Сходство эталонов между собой (таблица 5)")
     sm = m.etalon_similarity_matrix(etalons, metric)
     fig = px.imshow(sm, x=m.DISEASES, y=m.DISEASES, text_auto=".2f", zmin=0.4, zmax=1,
                     color_continuous_scale="Blues")
     fig.update_layout(height=420, margin=dict(l=10, r=10, t=10, b=10))
     st.plotly_chart(fig, use_container_width=True)
-
-# ---------- вкладка 3: оценка качества ----------
-elif page == "Оценка качества":
-    st.subheader("Оценка качества на наборе случаев")
-    src = st.radio("Источник данных", ["Загрузить CSV с реальными случаями", "Синтетическая выборка (проверка самосогласованности)"])
-    X = y = None
-    if src.startswith("Загрузить"):
-        st.caption("Формат: столбцы x1…x9 и diagnosis. x1 можно указать температурой в °C, x2…x9 можно указать числом или термом шкалы. "
-                   "Шаблон: data/cases_template.csv")
-        up = st.file_uploader("CSV-файл", type="csv")
-        if up is not None:
-            X, y = ev.load_cases(pd.read_csv(up))
-    else:
-        n = st.slider("Случаев на каждое заболевание", 20, 500, 200, 20)
-        seed = st.number_input("Зерно генератора", 0, 9999, 0)
-        st.info("Пациенты генерируются из самих эталонов, поэтому результат характеризует согласованность модели, "
-                "а не её точность на реальных пациентах.")
-        X, y = m.synthetic_cases(n, etalons, seed=int(seed))
-
-    if X is not None:
-        point, ci, cm_df, pc, p = cached_evaluate(X, y, etalons, alpha, delta, metric)
-        st.markdown(f"**Случаев:** {len(y)}")
-        st.dataframe(pd.DataFrame([{"Показатель": k, "Значение": v,
-                                    "95 % ДИ": f"{ci[k][0]:.3f} – {ci[k][1]:.3f}" if k in ci else ""}
-                                   for k, v in point.items()]).style.format({"Значение": "{:.3f}"}),
-                     hide_index=True, use_container_width=True)
-        c1, c2 = st.columns([1.2, 1])
-        with c1:
-            st.markdown("**Матрица ошибок** (строки: истинный диагноз, столбцы: ответ модели)")
-            fig = px.imshow(cm_df.values, x=list(cm_df.columns), y=list(cm_df.index), text_auto=True,
-                            color_continuous_scale="Blues")
-            fig.update_layout(height=380, margin=dict(l=10, r=10, t=10, b=10))
-            st.plotly_chart(fig, use_container_width=True)
-        with c2:
-            st.markdown("**Чувствительность и специфичность**")
-            st.dataframe(pc.style.format({"Чувствительность": "{:.3f}", "Специфичность": "{:.3f}"}),
-                         hide_index=True, use_container_width=True)
-            base = cached_baseline(X, y)
-            if base:
-                st.markdown("**Сравнение с логистической регрессией** (5-кратная перекрёстная проверка)")
-                keys = ["Доля верных ответов (accuracy)", "Сбалансированная точность", "Macro-F1", "Каппа Коэна", "Top-2 accuracy"]
-                st.dataframe(pd.DataFrame({"Показатель": keys, "Нечёткая модель": [point[k] for k in keys],
-                                           "Логистическая регрессия": [base[k] for k in keys]})
-                             .style.format({"Нечёткая модель": "{:.3f}", "Логистическая регрессия": "{:.3f}"}),
-                             hide_index=True, use_container_width=True)
-        st.session_state["last_X"], st.session_state["last_y"] = X, y
-
-# ---------- вкладка 4: анализ чувствительности ----------
-elif page == "Анализ чувствительности":
-    st.subheader("Анализ чувствительности")
-    if "last_X" not in st.session_state:
-        st.info("Сначала выберите набор случаев на вкладке «Оценка качества».")
-    else:
-        X, y = st.session_state["last_X"], st.session_state["last_y"]
-        st.markdown("**1. Устойчивость к экспертным значениям.** Все 12 значений, заданных прямым методом, "
-                    "случайно сдвигаются на ±ε; считается доля случаев, у которых ответ модели не изменился.")
-        eps = st.slider("ε", 0.05, 0.3, 0.1, 0.05)
-        mean_same, min_same = cached_robust(X, etalons, eps, alpha, delta, metric)
-        st.metric("Ответ не изменился (в среднем / в худшем прогоне)", f"{mean_same:.1%} / {min_same:.1%}")
-
-        st.markdown("**2. Влияние порога α и разрыва δ.**")
-        grid = cached_grid(X, y, etalons, metric)
-        fig = px.line(grid, x="α", y="Accuracy", color="δ", markers=True)
-        fig.update_layout(height=320, margin=dict(l=10, r=10, t=10, b=10))
-        st.plotly_chart(fig, use_container_width=True)
-        st.dataframe(grid.style.format({"Accuracy": "{:.3f}", "Отказы": "{:.3f}", "«Нельзя исключить»": "{:.3f}"}),
-                     hide_index=True, use_container_width=True)
-
-        st.markdown("**3. Сравнение мер близости.**")
-        rows = []
-        for name in m.METRICS:
-            pt, _, _, _, _ = cached_evaluate(X, y, etalons, alpha, delta, name, n_boot=1)
-            rows.append({"Мера": name, **{k: pt[k] for k in ["Доля верных ответов (accuracy)", "Macro-F1", "Top-2 accuracy", "Доля отказов («нетипично»)"]}})
-        st.dataframe(pd.DataFrame(rows).style.format({c: "{:.3f}" for c in rows[0] if c != "Мера"}),
-                     hide_index=True, use_container_width=True)
