@@ -95,7 +95,7 @@ def hamming_similarity(a: np.ndarray, e: np.ndarray, w: np.ndarray | None = None
 
 
 def euclid_similarity(a: np.ndarray, e: np.ndarray, w: np.ndarray | None = None) -> float:
-    """Формулы (9) и (11): S = 1 − d_E; при заданных весах формула (15)."""
+    """Формулы (9) и (11): S = 1 − d_E; при заданных весах формула (16)."""
     sq = (a - e) ** 2
     if w is None:
         return float(1 - np.sqrt(sq.mean()))
@@ -130,7 +130,7 @@ class Decision:
     status: str                         # "atypical" | "confident" | "uncertain"
     diagnosis: str | None               # k(1) или None, если картина нетипична
     confidence: float                   # S(1)
-    gap: float                          # Δ = S(1) − S(2), формула (14)
+    gap: float                          # Δ = S(1) − S(2), формула (15)
     cannot_exclude: list[str] = field(default_factory=list)
     explanation: list[tuple[str, float, float, float]] = field(default_factory=list)
 
@@ -139,7 +139,7 @@ class Decision:
         return [DISEASES[i] for i in self.order[:2]]
 
 
-# Правила (16) и (17): обязательный и исключающий признаки (по клиническим рекомендациям, п. 3.3).
+# Правила (17) и (18): обязательный и исключающий признаки (по клиническим рекомендациям, п. 3.3).
 # Каждое правило ограничивает сверху степень сходства с эталоном: S_k := min(S_k, μ),
 # где μ есть степень истинности условия, вычисленная операциями нечёткой логики (п. 1.2).
 KEY_RULES = {
