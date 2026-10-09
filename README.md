@@ -14,6 +14,10 @@ python -m venv .venv
 .venv\Scripts\streamlit run app.py
 ```
 
+Онлайн-версия: https://fuzzy-ari-diagnosis.streamlit.app/
+
+Для расчётных скриптов глав 3 (проверка на данных, рисунки) нужны дополнительные библиотеки: `pip install -r requirements-dev.txt`.
+
 ## Состав
 
 | Файл | Назначение |
