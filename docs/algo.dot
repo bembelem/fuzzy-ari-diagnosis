@@ -1,0 +1,29 @@
+digraph G {
+  graph [rankdir=TB, nodesep=0.35, ranksep=0.28, fontname="Liberation Serif", dpi=220, splines=ortho];
+  node  [fontname="Liberation Serif", fontsize=12, shape=box, width=3.9, height=0.55, fixedsize=true];
+  edge  [fontname="Liberation Serif", fontsize=11, arrowsize=0.7];
+  start [label="Начало", style=rounded, width=1.4, height=0.4];
+  inp   [label="Ввод температуры тела\nи словесных оценок симптомов", shape=parallelogram, width=4.2];
+  fa    [label="Формирование нечёткого множества A:\nx1 по формуле (13), x2, …, x9 по шкале термов"];
+  sim   [label="Степени сходства S(A, Ek) с эталонами ОРВИ,\nгриппа и COVID-19 по формулам (9), (11)"];
+  ord   [label="Упорядочение: S(1) ≥ S(2) ≥ S(3)", height=0.4];
+  rul   [label="Степени истинности правил (15), (16)\nдля острого тонзиллита и аллергического ринита"];
+  qa    [label="S(1) ≥ α ?", shape=diamond, width=1.9, height=0.75];
+  outa  [label="Выполнено правило: подозрение\nна это заболевание, нужен осмотр;\nиначе «картина нетипична»", shape=parallelogram, width=4.1, height=0.85];
+  qd    [label="S(1) − S(2) ≥ δ ?", shape=diamond, width=2.4, height=0.8];
+  outc  [label="Предварительный диагноз k(1)\nсо степенью сходства S(1)", shape=parallelogram, width=3.3, height=0.6];
+  outu  [label="Диагноз k(1) и «нельзя исключить»:\nk, для которых S(k) ≥ α, S(1) − S(k) < δ", shape=parallelogram, width=3.9, height=0.6];
+  addr  [label="Добавить заболевания, правила для которых\nвыполнены (степень истинности ≥ θ)"];
+  expl  [label="Пояснение: отличия пациента от эталона k(1)\nи признаки, отличающие k(1) от k(2)"];
+  end   [label="Конец", style=rounded, width=1.4, height=0.4];
+  start -> inp -> fa -> sim -> ord -> rul -> qa;
+  qa -> qd [xlabel="да  "];
+  qa -> outa [xlabel="нет"];
+  qd -> outc [xlabel="да "];
+  qd -> outu [xlabel="нет"];
+  outc -> addr; outu -> addr;
+  addr -> expl -> end;
+  outa -> end;
+  {rank=same; qa; outa}
+  {rank=same; outc; outu}
+}

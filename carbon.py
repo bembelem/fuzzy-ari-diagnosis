@@ -1,4 +1,4 @@
-"""Проверка модели на реальных данных Carbon Health (п. 3.5).
+"""Проверка модели на реальных данных Carbon Health (п. 3.4).
 
 Источник: Coronavirus Disease 2019 (COVID-19) Clinical Data Repository,
 https://github.com/mdcollab/covidclinicaldata (амбулаторные пациенты, США, апрель–октябрь 2020).
@@ -18,7 +18,7 @@ import model as m
 
 DATA_DIR = Path(__file__).parent / "data" / "carbonhealth"
 WEIGHTS = np.array([1, 1, 1, 1, 1, 1, 1, 0, 0], dtype=float)   # x8, x9 отсутствуют
-COVID, TONSIL = 2, 3
+COVID = 2
 COUGH_SEVERITY = {"Mild": 0.25, "Moderate": 0.5, "Severe": 0.75}
 SYMPTOMS = ["cough", "fever", "runny_nose", "sore_throat", "muscle_sore", "fatigue",
             "loss_of_smell", "loss_of_taste", "headache", "sob", "diarrhea"]
@@ -56,13 +56,16 @@ def to_fuzzy(df: pd.DataFrame, temperature: str = "fuzzy") -> np.ndarray:
     X[:, 4] = df["muscle_sore"].astype(float)
     X[:, 5] = df["fatigue"].astype(float)
     X[:, 6] = (df["loss_of_smell"] | df["loss_of_taste"]).astype(float)
+    # симптом записан только как «есть/нет»: «есть» означает типичную выраженность κ_i (п. 2.3)
+    X[:, 2:7] *= m.KAPPA[2:7]
+    if temperature == "report":
+        X[:, 0] *= m.KAPPA[0]
     return X
 
 
 def similarities(X: np.ndarray, etalons: np.ndarray = m.ETALONS, metric: str = m.METRIC,
-                 weights: np.ndarray = WEIGHTS, rules: bool = True) -> np.ndarray:
-    S = np.array([[m.METRICS[metric](a, e, weights) for e in etalons] for a in X])
-    return np.array([m.apply_rules(a, s) for a, s in zip(X, S)]) if rules else S
+                 weights: np.ndarray = WEIGHTS) -> np.ndarray:
+    return np.array([[m.METRICS[metric](a, e, weights) for e in etalons] for a in X])
 
 
 def disease_score(S: np.ndarray, k: int) -> np.ndarray:

@@ -2,6 +2,7 @@
 
 Запуск:  .venv\\Scripts\\streamlit run app.py
 """
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -51,16 +52,16 @@ ABSENT = {"м": "отсутствует", "ж": "отсутствует", "с": 
 MEETS = {"м": "встречается", "ж": "встречается", "с": "встречается", "мн": "встречаются"}
 
 
-def explain_text(feature, patient, etalon):
-    """Пояснение отличия пациента от эталона обычными словами."""
+def explain_text(feature, patient, etalon, other):
+    """Чем пациент отличается от типичной картины второго по сходству заболевания."""
     if feature == "Температура тела":
-        return "**Температура тела** " + ("выше" if patient > etalon else "ниже") + ", чем обычно бывает при этом заболевании"
+        return "**Температура тела** " + ("выше" if patient > etalon else "ниже") + f", чем обычно бывает при заболевании «{other}»"
     g = GENDER.get(feature, "м")
     if patient > etalon:
-        return f"**{feature}** {EXPRESSED[g]} сильнее, чем обычно бывает при этом заболевании"
+        return f"**{feature}** {EXPRESSED[g]} сильнее, чем обычно бывает при заболевании «{other}»"
     if patient == 0:
-        return f"**{feature}** {ABSENT[g]}, хотя при этом заболевании {MEETS[g]} часто"
-    return f"**{feature}** {EXPRESSED[g]} слабее, чем обычно бывает при этом заболевании"
+        return f"**{feature}** {ABSENT[g]}, хотя при заболевании «{other}» {MEETS[g]} часто"
+    return f"**{feature}** {EXPRESSED[g]} слабее, чем обычно бывает при заболевании «{other}»"
 
 
 # ---------- вкладка 1: диагностика ----------
@@ -84,41 +85,47 @@ if page == "Диагностика":
                     v = st.segmented_control(name, list(m.EXAM_TERMS), default="нет", key=f"ex{i}")
                     exam.append(m.EXAM_TERMS[v or "нет"])
         else:
-            st.caption("Без осмотра эти признаки не участвуют в сравнении.")
+            st.caption("Без осмотра правило острого тонзиллита проверяется только по жалобам.")
 
     a = m.patient_vector(t, terms)
-    d = m.diagnose(a, etalons, alpha, delta, metric, exam=exam)
+    d = m.diagnose(a, etalons, alpha, delta, metric, exam=None if exam is None else np.array(exam, dtype=float))
 
     st.divider()
     st.subheader("Результат")
+    flags = [f for f, _ in d.flags if f != d.diagnosis]
     if d.status == "atypical":
-        st.error("**Картина нетипична** ни для одного из пяти заболеваний. Требуется очное обследование.")
+        st.error("**Картина нетипична** для ОРВИ, гриппа и COVID-19, правила других заболеваний не выполнены. "
+                 "Требуется очное обследование.")
+    elif d.status == "rule":
+        st.error(f"Картина нетипична для ОРВИ, гриппа и COVID-19. Подозрение: **{d.diagnosis}**, требуется осмотр.")
     elif d.status == "confident":
         st.success(f"Предварительный диагноз: **{d.diagnosis}**")
     else:
         st.warning(f"Предварительный диагноз: **{d.diagnosis}**  \n"
                    f"Нельзя исключить: **{', '.join(d.cannot_exclude)}**. Рекомендуется дифференциальная проверка.")
+    if flags:
+        st.info("Выполнено правило: **" + ", ".join(flags) + "**. Рекомендуется осмотр или тест для подтверждения.")
 
-    if d.explanation:
-        with st.expander(f"Почему такой ответ: чем пациент отличается от типичной картины «{d.diagnosis}»"):
-            for feature, pa, pe, _ in d.explanation:
-                st.markdown("- " + explain_text(feature, pa, pe))
+    if d.contrast:
+        with st.expander(f"Почему «{d.diagnosis}», а не «{m.DISEASES[d.order[1]]}»"):
+            for feature, pa, pe, _ in d.contrast:
+                st.markdown("- " + explain_text(feature, pa, pe, m.DISEASES[d.order[1]]))
 
-    df_s = pd.DataFrame({"Заболевание": m.DISEASES, "Степень сходства": d.similarities}) \
-        .sort_values("Степень сходства")
+    df_s = pd.DataFrame({"Заболевание": m.DISEASES, "Степень сходства": d.similarities}).sort_values("Степень сходства")
     fig = px.bar(df_s, x="Степень сходства", y="Заболевание", orientation="h", text_auto=".3f",
                  range_x=[0, 1], color_discrete_sequence=["#4C78A8"])
     fig.add_vline(x=alpha, line_dash="dash", line_color="crimson", annotation_text=f"α = {alpha:.2f}".replace(".", ","), annotation_position="top")
-    fig.update_layout(height=300, margin=dict(l=10, r=10, t=30, b=10), separators=", ")
+    fig.update_layout(height=230, margin=dict(l=10, r=10, t=30, b=10), separators=", ")
     st.plotly_chart(fig, use_container_width=True, config={"staticPlot": True})
+    rd = m.rule_degrees(a, None if exam is None else np.array(exam, dtype=float))
     st.caption(f"Степень сходства с основным диагнозом {d.confidence:.3f}; порог α = {alpha:.2f}; "
-               f"разрыв со следующим заболеванием Δ = {d.gap:.3f} (δ = {delta:.2f}); "
-               f"температура {t:.1f} °C соответствует степени принадлежности {m.temperature_membership(t):.2f}.")
+               f"разрыв Δ = {d.gap:.3f} (δ = {delta:.2f}). Степени истинности правил: "
+               + "; ".join(f"{k.lower()} {v:.2f}" for k, v in rd.items()) + f" (порог θ = {m.THETA:.1f}).")
 
 # ---------- вкладка 2: эталоны ----------
 elif page == "Эталоны":
     st.subheader("Эталонные нечёткие множества (таблица 4)")
-    st.caption("Значения можно редактировать; экспертные значения (прямой метод) помечены в таблице курсовой звёздочкой.")
+    st.caption("Значение эталона есть средняя выраженность признака у больных (p · κ). Значения можно редактировать.")
     df_e = pd.DataFrame(st.session_state.etalons, index=m.DISEASES, columns=m.FEATURE_CODES)
     edited = st.data_editor(df_e, use_container_width=True,
                             column_config={c: st.column_config.NumberColumn(c, min_value=0.0, max_value=1.0, step=0.01, format="%.2f")
@@ -135,5 +142,11 @@ elif page == "Эталоны":
     sm = m.etalon_similarity_matrix(etalons, metric)
     fig = px.imshow(sm, x=m.DISEASES, y=m.DISEASES, text_auto=".2f", zmin=0.4, zmax=1,
                     color_continuous_scale="Blues")
-    fig.update_layout(height=420, margin=dict(l=10, r=10, t=10, b=10))
+    fig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10))
     st.plotly_chart(fig, use_container_width=True)
+
+    st.subheader("Правила для заболеваний без эталонов")
+    st.markdown("- **(15) Острый тонзиллит:** ЕСЛИ боль в горле И НЕ кашель [И (налёт на миндалинах ИЛИ увеличение лимфоузлов): "
+                "если проведён осмотр], ТО острый тонзиллит;\n"
+                "- **(16) Аллергический ринит:** ЕСЛИ чихание и зуд И НЕ лихорадка, ТО аллергический ринит.\n\n"
+                f"Правило считается выполненным при степени истинности не менее θ = {m.THETA:.1f}.")

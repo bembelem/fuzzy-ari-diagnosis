@@ -30,19 +30,24 @@ def case_vector(case):
 
 
 def verdict(case, d):
-    """«верно», «в списке» (верный диагноз среди «нельзя исключить») или «ошибка»."""
+    """«верно» (основной диагноз совпал), «в ответе» (заболевание названо среди «нельзя исключить»
+    или правилом) или «ошибка». Для ловушек верным считается ответ «нетипично»."""
     truth = case["эталон"]
     if truth == "нет среди пяти":
         return "верно" if d.status == "atypical" else "ошибка"
     if d.diagnosis == truth:
         return "верно"
-    if truth in d.cannot_exclude:
-        return "в списке"
+    if truth in d.answer():
+        return "в ответе"
     return "ошибка"
 
 
-def run(metric=m.METRIC, alpha=None, delta=0.05, group=None, use_exam=True):
-    alpha = alpha if alpha is not None else (0.52 if metric == "Евклид" else 0.6)  # калибровка: 5-й процентиль S_true на синтетике
+def is_typical(case):
+    return case["эталон"] != "нет среди пяти" and "атипич" not in case["тип"]
+
+
+def run(metric=m.METRIC, alpha=None, delta=m.DELTA, group=None, use_exam=True):
+    alpha = m.ALPHA if alpha is None else alpha
     rows = []
     for c in load_cases():
         if group and c["группа"] != group:
@@ -50,23 +55,18 @@ def run(metric=m.METRIC, alpha=None, delta=0.05, group=None, use_exam=True):
         a, w, exam = case_vector(c)
         d = m.diagnose(a, alpha=alpha, delta=delta, metric=metric, weights=w, exam=exam if use_exam else None)
         answer = "нетипично" if d.status == "atypical" else d.diagnosis
-        if d.cannot_exclude:
-            answer += " (нельзя исключить: " + ", ".join(d.cannot_exclude) + ")"
-        top = ", ".join(f"{m.DISEASES[i]} {d.similarities[i]:.2f}" for i in d.order[:3])
-        rows.append({"id": c["id"], "группа": c["группа"], "эталон": c["эталон"], "ответ": answer,
-                     "итог": verdict(c, d), "сходство": top, "осмотр": exam is not None})
+        extra = d.cannot_exclude + [f for f, _ in d.flags if f != d.diagnosis]
+        if extra:
+            answer += " (+ " + ", ".join(extra) + ")"
+        top = ", ".join(f"{m.DISEASES[i]} {d.similarities[i]:.2f}" for i in d.order)
+        rows.append({"id": c["id"], "группа": c["группа"], "эталон": c["эталон"], "типичная": is_typical(c),
+                     "ответ": answer, "итог": verdict(c, d), "сходство": top, "осмотр": exam is not None})
     return rows
 
 
 if __name__ == "__main__":
     for use_exam in (False, True):
-        rows = run(use_exam=use_exam)
-        print(f"\n### {m.METRIC}, данные осмотра: {'учитываются' if use_exam else 'не учитываются'}")
+        rows = run(use_exam=use_exam, group="проверка")
+        print(f"\n### данные осмотра: {'учитываются' if use_exam else 'не учитываются'}")
         for r in rows:
-            mark = "*" if r["осмотр"] else " "
-            print(f"  {r['id']:3s}{mark} [{r['группа']:10s}] эталон: {r['эталон']:18s} → {r['итог']:9s} | {r['ответ']}  [{r['сходство']}]")
-        for g in ("разработка", "проверка"):
-            sub = [r for r in rows if r["группа"] == g]
-            ok = sum(r["итог"] == "верно" for r in sub)
-            inl = sum(r["итог"] in ("верно", "в списке") for r in sub)
-            print(f"  {g}: верно {ok}/{len(sub)}, верно или в списке {inl}/{len(sub)}")
+            print(f"  {r['id']:3s}{'*' if r['осмотр'] else ' '} {r['эталон'][:20]:20s} → {r['итог']:8s} | {r['ответ']}  [{r['сходство']}]")

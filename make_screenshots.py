@@ -17,7 +17,7 @@ def wait_ready(page, text):
 
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(channel="msedge")
+    browser = p.chromium.launch(executable_path="/opt/pw-browsers/chromium-1194/chrome-linux/chrome")
     ctx = browser.new_context(viewport={"width": 1400, "height": 1000}, device_scale_factor=2, color_scheme="light")
     page = ctx.new_page()
 
@@ -29,7 +29,7 @@ with sync_playwright() as p:
     page.screenshot(path=OUT / "fig2_input.png")
 
     # рис. 3: результат с раскрытым пояснением
-    page.get_by_text("Почему такой ответ", exact=False).first.click()
+    page.get_by_text("Почему «", exact=False).first.click()
     page.wait_for_timeout(1500)
     res = page.get_by_text("Результат", exact=True).first
     res.scroll_into_view_if_needed()
@@ -37,7 +37,7 @@ with sync_playwright() as p:
     main = page.locator("section.stMain, section[data-testid='stMain']").first
     box = res.bounding_box()
     page.screenshot(path=OUT / "fig3_result.png", full_page=True,
-                    clip={"x": 300, "y": box["y"] + page.evaluate("window.scrollY") - 20, "width": 1100, "height": 720})
+                    clip={"x": 300, "y": box["y"] + page.evaluate("window.scrollY") - 20, "width": 1100, "height": 640})
 
     # рис. 4: эталоны
     page.goto(URL + "?page=Эталоны")

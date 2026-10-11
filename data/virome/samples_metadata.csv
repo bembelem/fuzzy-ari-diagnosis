@@ -1,0 +1,848 @@
+Sample_ID,ID,PatientID,Cohort,Date_collected,NEW_Infection_type,NEW_Infection_type2,NEW_Infection_type3,NEW_Infection_type4,NEW_Infection_type5,Others_non_respiratory,Protocol,Age,Score7,Score11,Score0,AGE,HISPANIC,race,medical_condition_specific,sex
+P1_S1,P1,1,MC,20-Dec-16,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P1_S2,P1,1,MC,17-Jan-17,Coronavirus 229E,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P1_S3,P1,1,MC,1-Feb-17,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P1_S4,P1,1,MC,7-Jun-17,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P1_S5,P1,1,MC,3-Jan-18,None,None,None,None,None,None,paired,24,8,18,0,24,NO,white,none,female
+P1_S6,P1,1,MC,10-Jan-18,Coronavirus OC43,None,None,None,None,None,paired,24,13,13,2,24,NO,white,none,female
+P1_S7,P1,1,MC,18-Jan-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P1_S8,P1,1,MC,22-Jan-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P1_S9,P1,1,MC,14-Mar-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P1_S10,P1,1,MC,22-Mar-18,None,None,None,None,None,None,paired,24,12,24,0,24,NO,white,none,female
+P1_S11,P1,1,MC,26-Mar-18,Rhinovirus A,None,None,None,None,None,paired,24,23,25,4,24,NO,white,none,female
+P1_S12,P1,1,MC,2-Apr-18,None,None,None,None,None,None,paired,24,2,2,0,24,NO,white,none,female
+P1_S13,P1,1,MC,12-Apr-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P1_S14,P1,1,MC,16-Apr-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P2_S1,P2,2,D1,10-Jan-17,Respiratory syncytial virus B,None,None,None,None,None,paired,4,5,18,3,4,NO,white,none,female
+P3_S1,P3,3,D1,12-Oct-16,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P3_S2,P3,3,D1,16-Nov-16,None,None,None,None,None,None,single,36,5,5,0,36,NO,white,diabetes,male
+P3_S3,P3,3,D1,29-Nov-16,None,None,None,None,None,None,single,36,5,8,1,36,NO,white,diabetes,male
+P3_S4,P3,3,D1,6-Dec-16,None,None,None,None,None,None,single,36,4,4,0,36,NO,white,diabetes,male
+P3_S5,P3,3,D1,13-Dec-16,None,None,None,None,None,None,single,36,0,1,0,36,NO,white,diabetes,male
+P3_S6,P3,3,D1,20-Dec-16,None,None,None,None,None,None,single,36,1,1,0,36,NO,white,diabetes,male
+P3_S7,P3,3,D1,3-Jan-17,None,None,None,None,None,None,paired,36,0,1,0,36,NO,white,diabetes,male
+P3_S8,P3,3,D1,10-Jan-17,None,None,None,None,None,None,paired,36,0,0,0,36,NO,white,diabetes,male
+P3_S9,P3,3,D1,18-Jan-17,None,None,None,None,None,None,paired,36,0,0,0,36,NO,white,diabetes,male
+P3_S10,P3,3,D1,25-Jan-17,None,None,None,None,None,None,paired,36,0,0,0,36,NO,white,diabetes,male
+P3_S11,P3,3,D1,15-Feb-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P3_S12,P3,3,D1,21-Feb-17,None,None,None,None,None,None,single,36,0,4,0,36,NO,white,diabetes,male
+P3_S13,P3,3,D1,2-Mar-17,Coronavirus 229E,None,None,None,None,None,single,36,3,3,0,36,NO,white,diabetes,male
+P3_S14,P3,3,D1,8-Mar-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P3_S15,P3,3,D1,16-Mar-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P3_S16,P3,3,D1,22-Mar-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P3_S17,P3,3,D1,31-Mar-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P3_S18,P3,3,D1,7-Apr-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,diabetes,male
+P4_S1,P4,4,D1,12-Oct-16,None,None,None,None,None,None,single,33,1,6,0,33,NO,African_American,none,female
+P4_S2,P4,4,D1,21-Oct-16,None,None,None,None,None,None,single,33,6,6,0,33,NO,African_American,none,female
+P4_S3,P4,4,D1,9-Nov-16,None,None,None,None,None,None,single,33,2,2,1,33,NO,African_American,none,female
+P4_S4,P4,4,D1,4-Jan-17,Rhinovirus C,None,None,None,None,None,paired,33,5,6,0,33,NO,African_American,none,female
+P4_S5,P4,4,D1,11-Jan-17,None,None,None,None,None,None,paired,33,1,1,0,33,NO,African_American,none,female
+P4_S6,P4,4,D1,18-Jan-17,None,None,None,None,None,None,paired,33,0,0,0,33,NO,African_American,none,female
+P4_S7,P4,4,D1,25-Jan-17,Rhinovirus C,None,None,None,None,None,paired,33,0,0,0,33,NO,African_American,none,female
+P4_S8,P4,4,D1,1-Feb-17,Rhinovirus C,None,None,None,None,None,paired,33,0,0,0,33,NO,African_American,none,female
+P4_S9,P4,4,D1,8-Feb-17,None,None,None,None,None,None,paired,33,0,0,0,33,NO,African_American,none,female
+P4_S10,P4,4,D1,15-Feb-17,Rhinovirus B,None,None,None,None,None,paired,33,0,5,0,33,NO,African_American,none,female
+P4_S11,P4,4,D1,22-Feb-17,Rhinovirus B,Coronavirus 229E,None,None,None,None,paired,33,10,14,2,33,NO,African_American,none,female
+P4_S12,P4,4,D1,1-Mar-17,None,None,None,None,None,None,paired,33,6,7,1,33,NO,African_American,none,female
+P4_S13,P4,4,D1,8-Mar-17,Rhinovirus B,None,None,None,None,None,paired,33,3,5,1,33,NO,African_American,none,female
+P4_S14,P4,4,D1,16-Mar-17,Coronavirus 229E,None,None,None,None,None,paired,33,1,6,0,33,NO,African_American,none,female
+P4_S15,P4,4,D1,22-Mar-17,None,None,None,None,None,None,paired,33,16,23,0,33,NO,African_American,none,female
+P4_S16,P4,4,D1,31-Mar-17,None,None,None,None,None,None,paired,33,10,11,1,33,NO,African_American,none,female
+P4_S17,P4,4,D1,5-Apr-17,None,None,None,None,None,None,paired,33,3,3,1,33,NO,African_American,none,female
+P5_S1,P5,5,MC,9-Nov-16,Undefined,None,None,None,None,None,single,22,5,5,1,22,NO,white,none,female
+P5_S2,P5,5,MC,16-Nov-16,None,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S3,P5,5,MC,21-Nov-16,None,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S4,P5,5,MC,29-Nov-16,None,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S5,P5,5,MC,7-Dec-16,Coronavirus 229E,Rhinovirus B,None,None,None,None,single,22,1,3,0,22,NO,white,none,female
+P5_S6,P5,5,MC,15-Dec-16,Coronavirus 229E,Rhinovirus B,None,None,None,None,single,22,3,4,0,22,NO,white,none,female
+P5_S7,P5,5,MC,20-Dec-16,None,None,None,None,None,None,single,22,1,1,0,22,NO,white,none,female
+P5_S8,P5,5,MC,4-Jan-17,None,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S9,P5,5,MC,11-Jan-17,Undefined,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S10,P5,5,MC,17-Jan-17,None,None,None,None,None,None,single,22,2,3,0,22,NO,white,none,female
+P5_S11,P5,5,MC,10-Feb-17,Undefined,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S12,P5,5,MC,14-Feb-17,Rhinovirus B,None,None,None,None,None,single,22,0,0,0,22,NO,white,none,female
+P5_S13,P5,5,MC,28-Feb-17,None,None,None,None,None,None,single,22,0,1,0,22,NO,white,none,female
+P5_S14,P5,5,MC,28-Mar-17,None,None,None,None,None,None,single,22,3,4,0,22,NO,white,none,female
+P5_S15,P5,5,MC,6-Oct-17,None,None,None,None,None,None,paired,22,9,16,0,22,NO,white,none,female
+P5_S16,P5,5,MC,12-Oct-17,None,None,None,None,None,None,paired,22,11,16,1,22,NO,white,none,female
+P5_S17,P5,5,MC,19-Oct-17,Rhinovirus B,None,None,None,None,None,paired,22,6,6,1,22,NO,white,none,female
+P5_S18,P5,5,MC,26-Oct-17,None,None,None,None,None,None,paired,22,0,0,0,22,NO,white,none,female
+P5_S19,P5,5,MC,3-Nov-17,None,None,None,None,None,None,paired,22,0,0,0,22,NO,white,none,female
+P5_S20,P5,5,MC,1-Dec-17,None,None,None,None,None,None,paired,22,0,3,0,22,NO,white,none,female
+P6_S1,P6,6,D1,17-Jan-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S2,P6,6,D1,14-Feb-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S3,P6,6,D1,28-Feb-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S4,P6,6,D1,9-Mar-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S5,P6,6,D1,16-Mar-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S6,P6,6,D1,23-Mar-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S7,P6,6,D1,31-Mar-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P6_S8,P6,6,D1,4-Apr-17,None,None,None,None,None,None,single,33,0,0,0,33,NO,Asian,none,female
+P7_S1,P7,7,D1,19-Oct-16,None,None,None,None,None,None,single,5,1,1,1,5,NO,white,asthma_eczema_allergies,female
+P7_S2,P7,7,D1,16-Nov-16,None,None,None,None,None,None,single,5,4,19,0,5,NO,white,asthma_eczema_allergies,female
+P7_S3,P7,7,D1,7-Dec-16,None,None,None,None,None,None,single,5,2,2,0,5,NO,white,asthma_eczema_allergies,female
+P7_S4,P7,7,D1,20-Apr-17,Rhinovirus A,None,None,None,None,None,single,5,7,NA,NA,5,NO,white,asthma_eczema_allergies,female
+P8_S1,P8,8,D1,16-Nov-16,None,None,None,None,None,None,single,37,25,51,0,37,NO,white,asthma_eczema_allergies,female
+P8_S2,P8,8,D1,30-Nov-16,Coronavirus OC43,None,None,None,None,None,single,37,19,27,2,37,NO,white,asthma_eczema_allergies,female
+P8_S3,P8,8,D1,7-Dec-16,Coronavirus OC43,None,None,None,None,None,single,37,8,8,2,37,NO,white,asthma_eczema_allergies,female
+P8_S4,P8,8,D1,14-Dec-16,None,None,None,None,None,None,single,37,0,2,0,37,NO,white,asthma_eczema_allergies,female
+P8_S5,P8,8,D1,4-Jan-17,None,None,None,None,None,None,single,37,9,9,2,37,NO,white,asthma_eczema_allergies,female
+P8_S6,P8,8,D1,8-Feb-17,None,None,None,None,None,None,single,37,0,0,0,37,NO,white,asthma_eczema_allergies,female
+P8_S7,P8,8,D1,15-Feb-17,None,None,None,None,None,None,single,37,0,1,0,37,NO,white,asthma_eczema_allergies,female
+P8_S8,P8,8,D1,22-Feb-17,Rhinovirus C,None,None,None,None,None,single,37,1,3,0,37,NO,white,asthma_eczema_allergies,female
+P8_S9,P8,8,D1,1-Mar-17,Rhinovirus C,None,None,None,None,None,single,37,2,4,1,37,NO,white,asthma_eczema_allergies,female
+P8_S10,P8,8,D1,8-Mar-17,Rhinovirus A,None,None,None,None,None,single,37,2,7,1,37,NO,white,asthma_eczema_allergies,female
+P8_S11,P8,8,D1,23-Mar-17,Coronavirus NL63,None,None,None,None,None,single,37,28,30,4,37,NO,white,asthma_eczema_allergies,female
+P9_S1,P9,9,MC,26-Oct-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S2,P9,9,MC,2-Nov-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S3,P9,9,MC,9-Nov-16,Rhinovirus B,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S4,P9,9,MC,22-Nov-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S5,P9,9,MC,29-Nov-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S6,P9,9,MC,6-Dec-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S7,P9,9,MC,14-Dec-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S8,P9,9,MC,20-Dec-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S9,P9,9,MC,28-Dec-16,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S10,P9,9,MC,17-Jan-17,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S11,P9,9,MC,14-Feb-17,Coronavirus 229E,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S12,P9,9,MC,22-Feb-17,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S13,P9,9,MC,28-Feb-17,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S14,P9,9,MC,8-Mar-17,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S15,P9,9,MC,21-Mar-17,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P9_S16,P9,9,MC,28-Mar-17,None,None,None,None,None,None,single,40,0,0,0,40,NO,Asian,none,female
+P10_S1,P10,10,MC,26-Oct-16,Rhinovirus B,None,None,None,None,None,single,23,21,25,7,23,NO,Asian,allergies,female
+P10_S2,P10,10,MC,3-Nov-16,Rhinovirus B,None,None,None,None,None,single,23,5,5,0,23,NO,Asian,allergies,female
+P10_S3,P10,10,MC,10-Nov-16,Rhinovirus B,None,None,None,None,None,single,23,0,1,0,23,NO,Asian,allergies,female
+P10_S4,P10,10,MC,18-Nov-16,None,None,None,None,None,None,single,23,1,1,0,23,NO,Asian,allergies,female
+P10_S5,P10,10,MC,22-Nov-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,allergies,female
+P10_S6,P10,10,MC,1-Dec-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,allergies,female
+P10_S7,P10,10,MC,8-Dec-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,allergies,female
+P10_S8,P10,10,MC,16-Dec-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,allergies,female
+P11_S1,P11,11,MC,6-Dec-16,None,None,None,None,None,None,single,30,4,6,0,30,NO,white,asthma_allergies,male
+P11_S2,P11,11,MC,13-Dec-16,None,None,None,None,None,None,single,30,29,35,9,30,NO,white,asthma_allergies,male
+P11_S3,P11,11,MC,19-Dec-16,Rhinovirus C,None,None,None,None,None,single,30,28,30,3,30,NO,white,asthma_allergies,male
+P11_S4,P11,11,MC,4-Jan-17,None,None,None,None,None,None,single,30,2,4,0,30,NO,white,asthma_allergies,male
+P11_S5,P11,11,MC,12-Apr-17,None,None,None,None,None,None,single,30,2,5,1,30,NO,white,asthma_allergies,male
+P11_S6,P11,11,MC,5-Jul-17,None,None,None,None,None,None,paired,30,0,18,0,30,NO,white,asthma_allergies,male
+P11_S7,P11,11,MC,17-Jul-17,Enterovirus,None,None,None,None,None,paired,30,29,37,2,30,NO,white,asthma_allergies,male
+P11_S8,P11,11,MC,31-Jul-17,None,None,None,None,None,None,paired,30,19,41,3,30,NO,white,asthma_allergies,male
+P11_S9,P11,11,MC,6-Mar-18,None,None,None,None,None,None,paired,30,33,47,3,30,NO,white,asthma_allergies,male
+P12_S1,P12,12,MC,1-Nov-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,none,female
+P12_S2,P12,12,MC,10-Nov-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,none,female
+P12_S3,P12,12,MC,15-Nov-16,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,none,female
+P12_S4,P12,12,MC,21-Nov-16,None,None,None,None,None,None,single,23,9,33,0,23,NO,Asian,none,female
+P12_S5,P12,12,MC,10-Mar-17,None,None,None,None,None,None,single,23,0,0,0,23,NO,Asian,none,female
+P13_S1,P13,13,ER,1-Nov-16,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S2,P13,13,ER,10-Nov-16,Rhinovirus A,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S3,P13,13,ER,17-Nov-16,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S4,P13,13,ER,30-Nov-16,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S5,P13,13,ER,6-Dec-16,Rhinovirus C,None,None,None,None,None,single,53,6,18,0,53,NO,white,NaN,male
+P13_S6,P13,13,ER,13-Dec-16,Rhinovirus C,None,None,None,None,None,single,53,12,13,0,53,NO,white,NaN,male
+P13_S7,P13,13,ER,22-Dec-16,None,None,None,None,None,None,single,53,2,3,0,53,NO,white,NaN,male
+P13_S8,P13,13,ER,28-Dec-16,None,None,None,None,None,None,single,53,1,1,0,53,NO,white,NaN,male
+P13_S9,P13,13,ER,5-Jan-17,None,None,None,None,None,None,single,53,0,7,0,53,NO,white,NaN,male
+P13_S10,P13,13,ER,10-Jan-17,Respiratory syncytial virus B,None,None,None,None,None,single,53,10,13,1,53,NO,white,NaN,male
+P13_S11,P13,13,ER,19-Jan-17,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S12,P13,13,ER,24-Jan-17,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S13,P13,13,ER,25-Jan-17,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S14,P13,13,ER,7-Feb-17,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S15,P13,13,ER,13-Feb-17,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P13_S16,P13,13,ER,4-Apr-17,None,None,None,None,None,None,single,53,0,0,0,53,NO,white,NaN,male
+P14_S1,P14,14,MC,2-Nov-16,None,None,None,None,None,None,single,26,0,0,0,26,NO,Asian,none,male
+P14_S2,P14,14,MC,9-Nov-16,None,None,None,None,None,None,single,26,0,0,0,26,NO,Asian,none,male
+P14_S3,P14,14,MC,15-Nov-16,None,None,None,None,None,None,single,26,0,0,0,26,NO,Asian,none,male
+P14_S4,P14,14,MC,29-Nov-16,None,None,None,None,None,None,single,26,1,1,1,26,NO,Asian,none,male
+P14_S5,P14,14,MC,7-Dec-16,None,None,None,None,None,None,single,26,1,4,0,26,NO,Asian,none,male
+P14_S6,P14,14,MC,14-Dec-16,None,None,None,None,None,None,single,26,10,16,1,26,NO,Asian,none,male
+P14_S7,P14,14,MC,21-Dec-16,None,None,None,None,None,None,single,26,2,15,1,26,NO,Asian,none,male
+P14_S8,P14,14,MC,22-Mar-17,None,None,None,None,None,None,single,26,0,0,0,26,NO,Asian,none,male
+P15_S1,P15,15,ER,2-Dec-16,None,None,None,None,None,None,single,39,2,2,1,39,NO,white,asthma_allergies,male
+P15_S2,P15,15,ER,28-Dec-16,None,None,None,None,None,None,single,39,63,99,5,39,NO,white,asthma_allergies,male
+P15_S3,P15,15,ER,4-Jan-17,None,None,None,None,None,None,single,39,10,19,0,39,NO,white,asthma_allergies,male
+P15_S4,P15,15,ER,8-Jan-17,Coronavirus OC43,None,None,None,None,None,single,39,9,16,0,39,NO,white,asthma_allergies,male
+P15_S5,P15,15,ER,25-Jan-17,None,None,None,None,None,None,single,39,0,0,0,39,NO,white,asthma_allergies,male
+P15_S6,P15,15,ER,10-Feb-17,Coronavirus 229E,None,None,None,None,None,single,39,5,8,1,39,NO,white,asthma_allergies,male
+P15_S7,P15,15,ER,14-Feb-17,Coronavirus 229E,None,None,None,None,None,single,39,6,6,3,39,NO,white,asthma_allergies,male
+P15_S8,P15,15,ER,1-Mar-17,None,None,None,None,None,None,single,39,0,0,0,39,NO,white,asthma_allergies,male
+P15_S9,P15,15,ER,3-Mar-17,None,None,None,None,None,"Human Herpesvirus 5 Towne-BAC isolate, complete sequence",single,39,0,0,0,39,NO,white,asthma_allergies,male
+P15_S10,P15,15,ER,17-Mar-17,None,None,None,None,None,None,single,39,0,5,0,39,NO,white,asthma_allergies,male
+P15_S11,P15,15,ER,27-Mar-17,None,None,None,None,None,None,single,39,26,26,5,39,NO,white,asthma_allergies,male
+P15_S12,P15,15,ER,29-Mar-17,None,None,None,None,None,None,single,39,17,17,1,39,NO,white,asthma_allergies,male
+P15_S13,P15,15,ER,4-Apr-17,None,None,None,None,None,None,single,39,0,0,0,39,NO,white,asthma_allergies,male
+P15_S14,P15,15,ER,14-Apr-17,None,None,None,None,None,None,single,39,0,0,0,39,NO,white,asthma_allergies,male
+P15_S15,P15,15,ER,25-Apr-17,None,None,None,None,None,None,single,39,0,0,0,39,NO,white,asthma_allergies,male
+P15_S16,P15,15,ER,2-May-17,None,None,None,None,None,None,single,39,0,2,0,39,NO,white,asthma_allergies,male
+P16_S1,P16,16,ER,13-Sep-17,None,None,None,None,None,None,paired,60,0,0,0,60,NO,white,hypotyroid,female
+P16_S2,P16,16,ER,6-Oct-17,Rhinovirus A,None,None,None,None,None,paired,60,0,0,0,60,NO,white,hypotyroid,female
+P16_S3,P16,16,ER,19-Oct-17,None,None,None,None,None,None,paired,60,4,4,0,60,NO,white,hypotyroid,female
+P16_S4,P16,16,ER,19-Dec-17,Coronavirus OC43,None,None,None,None,None,paired,60,0,0,0,60,NO,white,hypotyroid,female
+P16_S5,P16,16,ER,26-Dec-17,None,None,None,None,None,None,paired,60,0,0,0,60,NO,white,hypotyroid,female
+P16_S6,P16,16,ER,12-Jan-18,None,None,None,None,None,None,paired,60,0,1,0,60,NO,white,hypotyroid,female
+P16_S7,P16,16,ER,16-Jan-18,Coronavirus HKU1,None,None,None,None,None,paired,60,1,2,1,60,NO,white,hypotyroid,female
+P16_S8,P16,16,ER,23-Jan-18,None,None,None,None,None,None,paired,60,1,1,1,60,NO,white,hypotyroid,female
+P17_S1,P17,17,ER,21-Nov-16,None,None,None,None,None,None,single,44,4,14,0,44,NO,Asian,none,female
+P17_S2,P17,17,ER,5-Dec-16,None,None,None,None,None,None,single,44,0,0,0,44,NO,Asian,none,female
+P17_S3,P17,17,ER,17-Apr-17,None,None,None,None,None,None,single,44,0,0,0,44,NO,Asian,none,female
+P18_S1,P18,18,MC,29-Nov-16,None,None,None,None,None,None,single,36,6,16,1,36,NO,white,none,male
+P18_S2,P18,18,MC,8-Feb-17,None,None,None,None,None,None,single,36,0,2,0,36,NO,white,none,male
+P18_S3,P18,18,MC,15-Feb-17,Coronavirus 229E,None,None,None,None,None,single,36,2,2,1,36,NO,white,none,male
+P18_S4,P18,18,MC,21-Feb-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,none,male
+P18_S5,P18,18,MC,1-Mar-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,none,male
+P18_S6,P18,18,MC,8-Mar-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,none,male
+P18_S7,P18,18,MC,22-Mar-17,None,None,None,None,None,None,single,36,0,4,0,36,NO,white,none,male
+P18_S8,P18,18,MC,31-Mar-17,Rhinovirus C,None,None,None,None,None,single,36,8,8,1,36,NO,white,none,male
+P18_S9,P18,18,MC,5-Apr-17,Rhinovirus C,None,None,None,None,None,single,36,0,0,0,36,NO,white,none,male
+P18_S10,P18,18,MC,12-Apr-17,None,None,None,None,None,None,single,36,0,0,0,36,NO,white,none,male
+P19_S1,P19,19,MC,17-Jan-17,None,None,None,None,None,None,single,34,17,18,2,34,NO,Mixed,allergies,female
+P19_S2,P19,19,MC,1-Feb-17,None,None,None,None,None,None,single,34,2,10,0,34,NO,Mixed,allergies,female
+P19_S3,P19,19,MC,8-Feb-17,Rhinovirus B,None,None,None,None,None,single,34,25,44,4,34,NO,Mixed,allergies,female
+P19_S4,P19,19,MC,14-Feb-17,Rhinovirus B,None,None,None,None,None,single,34,34,46,4,34,NO,Mixed,allergies,female
+P19_S5,P19,19,MC,21-Feb-17,None,None,None,None,None,None,single,34,15,18,2,34,NO,Mixed,allergies,female
+P19_S6,P19,19,MC,1-Mar-17,None,None,None,None,None,None,single,34,2,3,0,34,NO,Mixed,allergies,female
+P19_S7,P19,19,MC,16-Mar-17,None,None,None,None,None,None,single,34,3,8,1,34,NO,Mixed,allergies,female
+P19_S8,P19,19,MC,22-Mar-17,None,None,None,None,None,None,single,34,6,6,1,34,NO,Mixed,allergies,female
+P19_S9,P19,19,MC,12-Apr-17,None,None,None,None,None,None,single,34,2,2,0,34,NO,Mixed,allergies,female
+P20_S1,P20,20,SC,14-Nov-16,Rhinovirus C,None,None,None,None,None,single,14,16,19,4,14,NO,African_American,none,female
+P20_S2,P20,20,SC,22-Nov-16,None,None,None,None,None,None,single,14,12,12,0,14,NO,African_American,none,female
+P20_S3,P20,20,SC,7-Dec-16,None,None,None,None,None,None,single,14,0,0,0,14,NO,African_American,none,female
+P20_S4,P20,20,SC,18-Jan-17,None,None,None,None,None,None,single,14,0,0,0,14,NO,African_American,none,female
+P21_S1,P21,21,SC,14-Nov-16,None,None,None,None,None,None,single,38,0,5,0,38,NO,African_American,none,female
+P21_S2,P21,21,SC,29-Nov-16,None,None,None,None,None,None,single,38,1,6,1,38,NO,African_American,none,female
+P21_S3,P21,21,SC,7-Dec-16,None,None,None,None,None,None,single,38,8,27,1,38,NO,African_American,none,female
+P21_S4,P21,21,SC,14-Dec-16,None,None,None,None,None,None,single,38,36,43,8,38,NO,African_American,none,female
+P21_S5,P21,21,SC,15-Feb-17,None,None,None,None,None,None,single,38,15,21,4,38,NO,African_American,none,female
+P22_S1,P22,22,SC,21-Dec-16,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,female
+P22_S2,P22,22,SC,4-Jan-17,Rhinovirus B,None,None,None,None,None,single,14,3,3,0,14,YES,Mixed,none,female
+P22_S3,P22,22,SC,11-Jan-17,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,female
+P22_S4,P22,22,SC,18-Jan-17,Undefined,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,female
+P22_S5,P22,22,SC,8-Mar-17,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,female
+P23_S1,P23,23,SC,22-Nov-16,None,None,None,None,None,None,single,14,24,41,4,14,YES,Mixed,asthma_allergies,male
+P23_S2,P23,23,SC,8-Mar-17,None,None,None,None,None,None,single,14,24,37,4,14,YES,Mixed,asthma_allergies,male
+P23_S3,P23,23,SC,22-Mar-17,Rhinovirus C,None,None,None,None,None,single,14,26,41,6,14,YES,Mixed,asthma_allergies,male
+P23_S4,P23,23,SC,29-Mar-17,None,None,None,None,None,None,single,14,21,30,3,14,YES,Mixed,asthma_allergies,male
+P24_S1,P24,24,SC,14-Nov-16,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,male
+P24_S2,P24,24,SC,22-Nov-16,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,male
+P24_S3,P24,24,SC,29-Nov-16,Rhinovirus C,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,male
+P24_S4,P24,24,SC,7-Dec-16,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,male
+P24_S5,P24,24,SC,14-Dec-16,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,male
+P24_S6,P24,24,SC,18-Jan-17,None,None,None,None,None,None,single,14,0,0,0,14,YES,Mixed,none,male
+P25_S1,P25,25,SC,11-Jan-17,None,None,None,None,None,None,single,28,1,9,0,28,NO,white,allergies,female
+P25_S2,P25,25,SC,8-Mar-17,Rhinovirus A,None,None,None,None,None,single,28,33,40,3,28,NO,white,allergies,female
+P25_S3,P25,25,SC,22-Mar-17,None,None,None,None,None,None,single,28,9,24,0,28,NO,white,allergies,female
+P25_S4,P25,25,SC,4-Apr-17,None,None,None,None,None,None,single,28,0,0,0,28,NO,white,allergies,female
+P26_S1,P26,26,SC,14-Nov-16,Rhinovirus B,None,None,None,None,None,single,NA,0,0,0,NA,NO,Mixed,asthma,male
+P26_S2,P26,26,SC,22-Nov-16,Rhinovirus B,None,None,None,None,None,single,NA,2,2,2,NA,NO,Mixed,asthma,male
+P26_S3,P26,26,SC,29-Nov-16,None,None,None,None,None,None,single,NA,0,0,0,NA,NO,Mixed,asthma,male
+P26_S4,P26,26,SC,7-Dec-16,None,None,None,None,None,None,single,NA,0,4,0,NA,NO,Mixed,asthma,male
+P26_S5,P26,26,SC,18-Jan-17,None,None,None,None,None,None,single,NA,0,0,0,NA,NO,Mixed,asthma,male
+P27_S1,P27,27,SC,14-Nov-16,Rhinovirus B,None,None,None,None,None,single,14,8,9,2,14,NO,Mixed,mood_disorder,female
+P27_S2,P27,27,SC,22-Nov-16,None,None,None,None,None,None,single,14,2,3,0,14,NO,Mixed,mood_disorder,female
+P27_S3,P27,27,SC,29-Nov-16,Rhinovirus B,None,None,None,None,None,single,14,1,1,0,14,NO,Mixed,mood_disorder,female
+P27_S4,P27,27,SC,11-Jan-17,None,None,None,None,None,None,single,14,0,0,0,14,NO,Mixed,mood_disorder,female
+P27_S5,P27,27,SC,22-Mar-17,None,None,None,None,None,None,single,14,0,0,0,14,NO,Mixed,mood_disorder,female
+P27_S6,P27,27,SC,29-Mar-17,Coronavirus 229E,None,None,None,None,None,single,14,0,NA,0,14,NO,Mixed,mood_disorder,female
+P28_S1,P28,28,SC,14-Nov-16,None,None,None,None,None,None,single,29,0,0,0,29,NO,white,asthma_allergies,female
+P28_S2,P28,28,SC,22-Nov-16,None,None,None,None,None,None,single,29,10,19,2,29,NO,white,asthma_allergies,female
+P28_S3,P28,28,SC,29-Nov-16,None,None,None,None,None,None,single,29,13,17,3,29,NO,white,asthma_allergies,female
+P28_S4,P28,28,SC,7-Dec-16,None,None,None,None,None,None,single,29,12,17,1,29,NO,white,asthma_allergies,female
+P28_S5,P28,28,SC,21-Dec-16,None,None,None,None,None,None,single,29,5,5,0,29,NO,white,asthma_allergies,female
+P28_S6,P28,28,SC,8-Mar-17,None,None,None,None,None,None,single,29,8,14,0,29,NO,white,asthma_allergies,female
+P28_S7,P28,28,SC,15-Nov-17,Rhinovirus A,None,None,None,None,None,paired,29,36,44,7,29,NO,white,asthma_allergies,female
+P28_S8,P28,28,SC,22-Nov-17,None,None,None,None,None,None,paired,29,11,11,2,29,NO,white,asthma_allergies,female
+P28_S9,P28,28,SC,29-Nov-17,None,None,None,None,None,None,paired,29,0,0,0,29,NO,white,asthma_allergies,female
+P29_S1,P29,29,SC,14-Nov-16,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,immunedisorder,male
+P29_S2,P29,29,SC,14-Dec-16,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,immunedisorder,male
+P30_S1,P30,30,SC,4-Jan-17,None,None,None,None,None,None,single,26,9,14,1,26,NO,white,eczema,female
+P30_S2,P30,30,SC,8-Feb-17,Coronavirus NL63,None,None,None,None,None,single,26,37,42,8,26,NO,white,eczema,female
+P31_S1,P31,31,SC,14-Nov-16,Parainfluenza 2,None,None,None,None,None,single,26,0,0,0,26,YES,Mixed,none,male
+P31_S2,P31,31,SC,22-Nov-16,Undefined,None,None,None,None,None,single,26,0,4,0,26,YES,Mixed,none,male
+P31_S3,P31,31,SC,7-Dec-16,None,None,None,None,None,None,single,26,0,0,0,26,YES,Mixed,none,male
+P31_S4,P31,31,SC,21-Dec-16,None,None,None,None,None,None,single,26,0,0,0,26,YES,Mixed,none,male
+P31_S5,P31,31,SC,11-Jan-17,None,None,None,None,None,None,single,26,0,0,0,26,YES,Mixed,none,male
+P31_S6,P31,31,SC,4-Apr-17,None,None,None,None,None,None,single,26,NA,NA,NA,26,YES,Mixed,none,male
+P32_S1,P32,32,SC,14-Nov-16,Rhinovirus B,Undefined,None,None,None,None,single,29,1,1,0,29,NO,white,none,male
+P32_S2,P32,32,SC,22-Nov-16,Rhinovirus B,None,None,None,None,None,single,29,0,0,0,29,NO,white,none,male
+P32_S3,P32,32,SC,29-Nov-16,Rhinovirus B,None,None,None,None,None,single,29,0,0,0,29,NO,white,none,male
+P32_S4,P32,32,SC,7-Dec-16,Rhinovirus B,None,None,None,None,None,single,29,1,1,0,29,NO,white,none,male
+P32_S5,P32,32,SC,14-Dec-16,Rhinovirus B,None,None,None,None,None,single,29,1,1,0,29,NO,white,none,male
+P32_S6,P32,32,SC,21-Dec-16,None,None,None,None,None,None,single,29,3,6,0,29,NO,white,none,male
+P32_S7,P32,32,SC,22-Mar-17,None,None,None,None,None,None,single,29,17,20,3,29,NO,white,none,male
+P33_S1,P33,33,SC,14-Nov-16,None,None,None,None,None,None,single,16,0,0,0,16,NO,African_American,none,female
+P33_S2,P33,33,SC,29-Nov-16,Rhinovirus C,None,None,None,None,None,single,16,3,3,3,16,NO,African_American,none,female
+P33_S3,P33,33,SC,7-Dec-16,None,None,None,None,None,None,single,16,0,0,0,16,NO,African_American,none,female
+P33_S4,P33,33,SC,14-Dec-16,None,None,None,None,None,None,single,16,0,0,0,16,NO,African_American,none,female
+P33_S5,P33,33,SC,29-Mar-17,None,None,None,None,None,None,single,16,0,0,0,16,NO,African_American,none,female
+P34_S1,P34,34,SC,14-Nov-16,None,None,None,None,None,None,single,24,19,25,7,24,NO,white,none,female
+P34_S2,P34,34,SC,22-Nov-16,None,None,None,None,None,None,single,24,7,7,1,24,NO,white,none,female
+P34_S3,P34,34,SC,29-Nov-16,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P34_S4,P34,34,SC,7-Dec-16,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P34_S5,P34,34,SC,14-Dec-16,None,None,None,None,None,None,single,24,1,3,0,24,NO,white,none,female
+P34_S6,P34,34,SC,21-Dec-16,None,None,None,None,None,None,single,24,2,2,0,24,NO,white,none,female
+P34_S7,P34,34,SC,4-Jan-17,None,None,None,None,None,None,single,24,3,3,0,24,NO,white,none,female
+P34_S8,P34,34,SC,11-Jan-17,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P34_S9,P34,34,SC,18-Jan-17,None,None,None,None,None,None,single,24,0,0,0,24,NO,white,none,female
+P34_S10,P34,34,SC,1-Mar-17,None,None,None,None,None,None,single,24,1,1,0,24,NO,white,none,female
+P34_S11,P34,34,SC,22-Nov-17,None,None,None,None,None,None,paired,24,10,16,3,24,NO,white,none,female
+P34_S12,P34,34,SC,20-Dec-17,None,None,None,None,None,None,paired,24,3,5,0,24,NO,white,none,female
+P34_S13,P34,34,SC,3-Jan-18,Rhinovirus C,None,None,None,None,None,paired,24,5,8,0,24,NO,white,none,female
+P35_S1,P35,35,D1,16-Nov-16,None,None,None,None,None,None,single,4,0,2,0,4,NO,Asian,eczema,male
+P35_S2,P35,35,D1,3-Jan-17,None,None,None,None,None,None,single,4,2,3,0,4,NO,Asian,eczema,male
+P35_S3,P35,35,D1,10-Jan-17,None,None,None,None,None,None,single,4,2,4,0,4,NO,Asian,eczema,male
+P35_S4,P35,35,D1,17-Jan-17,Rhinovirus C,None,None,None,None,None,single,4,2,2,0,4,NO,Asian,eczema,male
+P35_S5,P35,35,D1,24-Jan-17,None,None,None,None,None,None,single,4,0,2,0,4,NO,Asian,eczema,male
+P35_S6,P35,35,D1,1-Feb-17,None,None,None,None,None,None,single,4,2,4,1,4,NO,Asian,eczema,male
+P36_S1,P36,36,D1,16-Nov-16,None,None,None,None,None,None,single,37,2,13,0,37,NO,Asian,arthritis_allergies,male
+P36_S2,P36,36,D1,21-Dec-16,None,None,None,None,None,None,single,37,2,3,0,37,NO,Asian,arthritis_allergies,male
+P36_S3,P36,36,D1,3-Jan-17,None,None,None,None,None,None,single,37,10,15,1,37,NO,Asian,arthritis_allergies,male
+P36_S4,P36,36,D1,10-Jan-17,None,None,None,None,None,None,single,37,7,9,1,37,NO,Asian,arthritis_allergies,male
+P36_S5,P36,36,D1,17-Jan-17,None,None,None,None,None,None,single,37,7,13,2,37,NO,Asian,arthritis_allergies,male
+P36_S6,P36,36,D1,24-Jan-17,None,None,None,None,None,None,single,37,9,16,4,37,NO,Asian,arthritis_allergies,male
+P36_S7,P36,36,D1,1-Feb-17,Coronavirus OC43,None,None,None,None,None,single,37,23,34,5,37,NO,Asian,arthritis_allergies,male
+P36_S8,P36,36,D1,15-Feb-17,Rhinovirus A,None,None,None,None,None,single,37,8,14,1,37,NO,Asian,arthritis_allergies,male
+P36_S9,P36,36,D1,21-Feb-17,Rhinovirus A,None,None,None,None,None,single,37,12,16,1,37,NO,Asian,arthritis_allergies,male
+P36_S10,P36,36,D1,28-Feb-17,None,None,None,None,None,None,single,37,7,14,1,37,NO,Asian,arthritis_allergies,male
+P37_S1,P37,37,ER,21-Nov-16,Respiratory syncytial virus B,None,None,None,None,None,single,24,15,18,0,24,NO,white,none,female
+P37_S2,P37,37,ER,8-Dec-16,None,None,None,None,None,None,single,24,4,4,2,24,NO,white,none,female
+P37_S3,P37,37,ER,25-Feb-17,None,None,None,None,None,None,single,24,0,2,0,24,NO,white,none,female
+P38_S1,P38,38,SC,22-Nov-16,None,None,None,None,None,None,single,15,NA,NA,0,15,NO,African_American,allergy,male
+P38_S2,P38,38,SC,29-Nov-16,None,None,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S3,P38,38,SC,7-Dec-16,None,None,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S4,P38,38,SC,14-Dec-16,None,None,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S5,P38,38,SC,21-Dec-16,Coronavirus NL63,Respiratory syncytial virus B,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S6,P38,38,SC,4-Jan-17,None,None,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S7,P38,38,SC,11-Jan-17,None,None,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S8,P38,38,SC,18-Jan-17,None,None,None,None,None,None,single,15,NA,NA,NA,15,NO,African_American,allergy,male
+P38_S9,P38,38,SC,22-Mar-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,allergy,male
+P39_S1,P39,39,SC,21-Dec-16,None,None,None,None,None,None,single,14,0,0,0,14,NO,Asian,none,female
+P39_S2,P39,39,SC,4-Jan-17,Rhinovirus A,None,None,None,None,None,single,14,0,0,0,14,NO,Asian,none,female
+P39_S3,P39,39,SC,11-Jan-17,None,None,None,None,None,None,single,14,0,0,0,14,NO,Asian,none,female
+P39_S4,P39,39,SC,18-Jan-17,None,None,None,None,None,None,single,14,1,1,0,14,NO,Asian,none,female
+P39_S5,P39,39,SC,1-Mar-17,None,None,None,None,None,None,single,14,0,0,0,14,NO,Asian,none,female
+P40_S1,P40,40,SC,29-Nov-16,None,None,None,None,None,None,single,15,6,21,0,15,NO,African_American,none,male
+P40_S2,P40,40,SC,8-Feb-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P40_S3,P40,40,SC,15-Feb-17,Coronavirus OC43,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P40_S4,P40,40,SC,1-Mar-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P41_S1,P41,41,SC,22-Nov-16,Rhinovirus A,None,None,None,None,None,single,43,NA,NA,NA,43,YES,African_American,obesity_allergy,male
+P41_S2,P41,41,SC,29-Nov-16,None,None,None,None,None,None,single,43,NA,NA,NA,43,YES,African_American,obesity_allergy,male
+P42_S1,P42,42,SC,22-Nov-16,Rhinovirus C,None,None,None,None,None,single,16,17,43,1,16,YES,NaN,none,male
+P42_S2,P42,42,SC,29-Nov-16,Rhinovirus C,None,None,None,None,None,single,16,37,55,3,16,YES,NaN,none,male
+P42_S3,P42,42,SC,7-Dec-16,None,None,None,None,None,None,single,16,NA,NA,NA,16,YES,NaN,none,male
+P42_S4,P42,42,SC,21-Dec-16,None,None,None,None,None,None,single,16,NA,NA,NA,16,YES,NaN,none,male
+P42_S5,P42,42,SC,4-Jan-17,Coronavirus 229E,None,None,None,None,None,single,16,NA,NA,NA,16,YES,NaN,none,male
+P42_S6,P42,42,SC,18-Jan-17,None,None,None,None,None,None,single,16,NA,NA,NA,16,YES,NaN,none,male
+P42_S7,P42,42,SC,8-Feb-17,None,None,None,None,None,None,single,16,28,51,3,16,YES,NaN,none,male
+P42_S8,P42,42,SC,8-Mar-17,Coronavirus HKU1,None,None,None,None,None,single,16,NA,NA,NA,16,YES,NaN,none,male
+P43_S1,P43,43,SC,18-Jan-17,None,None,None,None,None,None,single,15,0,0,0,15,YES,African_American,none,male
+P43_S2,P43,43,SC,8-Feb-17,None,None,None,None,None,None,single,15,0,0,0,15,YES,African_American,none,male
+P43_S3,P43,43,SC,15-Feb-17,None,None,None,None,None,None,single,15,0,0,0,15,YES,African_American,none,male
+P44_S1,P44,44,SC,29-Nov-16,None,None,None,None,None,None,single,17,3,6,1,17,NO,African_American,none,female
+P44_S2,P44,44,SC,7-Dec-16,Respiratory syncytial virus,None,None,None,None,None,single,17,18,23,5,17,NO,African_American,none,female
+P44_S3,P44,44,SC,14-Dec-16,None,None,None,None,None,None,single,17,21,41,2,17,NO,African_American,none,female
+P44_S4,P44,44,SC,8-Feb-17,None,None,None,None,None,None,single,17,0,0,0,17,NO,African_American,none,female
+P44_S5,P44,44,SC,15-Feb-17,None,None,None,None,None,None,single,17,0,0,0,17,NO,African_American,none,female
+P44_S6,P44,44,SC,1-Mar-17,Coronavirus 229E,None,None,None,None,None,single,17,1,1,0,17,NO,African_American,none,female
+P45_S1,P45,45,SC,7-Dec-16,None,None,None,None,None,None,single,32,0,0,0,32,NO,African_American,none,male
+P45_S2,P45,45,SC,14-Dec-16,None,None,None,None,None,None,single,32,0,0,0,32,NO,African_American,none,male
+P45_S3,P45,45,SC,21-Dec-16,None,None,None,None,None,None,single,32,0,0,0,32,NO,African_American,none,male
+P45_S4,P45,45,SC,15-Feb-17,None,None,None,None,None,None,single,32,0,0,0,32,NO,African_American,none,male
+P46_S1,P46,46,MC,1-Dec-16,None,None,None,None,None,None,single,52,0,0,0,52,NO,white,none,male
+P46_S2,P46,46,MC,4-Jan-17,None,None,None,None,None,None,single,52,0,0,0,52,NO,white,none,male
+P46_S3,P46,46,MC,18-Jan-17,Respiratory syncytial virus,None,None,None,None,None,single,52,32,36,4,52,NO,white,none,male
+P46_S4,P46,46,MC,7-Feb-17,None,None,None,None,None,None,single,52,2,2,0,52,NO,white,none,male
+P46_S5,P46,46,MC,14-Feb-17,None,None,None,None,None,None,single,52,0,0,0,52,NO,white,none,male
+P46_S6,P46,46,MC,21-Feb-17,None,None,None,None,None,None,single,52,0,0,0,52,NO,white,none,male
+P46_S7,P46,46,MC,21-Mar-17,None,None,None,None,None,None,single,52,1,7,0,52,NO,white,none,male
+P46_S8,P46,46,MC,28-Mar-17,None,None,None,None,None,None,single,52,10,22,3,52,NO,white,none,male
+P46_S9,P46,46,MC,3-Apr-17,Influenza B,None,None,None,None,None,single,52,14,15,2,52,NO,white,none,male
+P46_S10,P46,46,MC,10-Apr-17,None,None,None,None,None,None,single,52,2,7,1,52,NO,white,none,male
+P47_S1,P47,47,D1,28-Dec-16,Coronavirus OC43,None,None,None,None,None,paired,3,1,1,0,3,NO,African_American,allergies_blooddisorder,female
+P47_S2,P47,47,D1,26-Jan-17,Coronavirus OC43,Adenovirus,WU_Polyomavirus,None,None,None,paired,3,0,0,0,3,NO,African_American,allergies_blooddisorder,female
+P48_S1,P48,48,ER,2-Dec-16,None,None,None,None,None,None,single,30,3,3,0,30,NO,white,none,male
+P48_S2,P48,48,ER,6-Dec-16,None,None,None,None,None,None,single,30,3,4,0,30,NO,white,none,male
+P48_S3,P48,48,ER,15-Dec-16,None,None,None,None,None,None,single,30,1,6,0,30,NO,white,none,male
+P48_S4,P48,48,ER,28-Dec-16,Rhinovirus C,None,None,None,None,None,single,30,3,7,0,30,NO,white,none,male
+P48_S5,P48,48,ER,6-Jan-17,None,None,None,None,None,None,single,30,3,4,0,30,NO,white,none,male
+P48_S6,P48,48,ER,10-Jan-17,None,None,None,None,None,None,single,30,4,4,0,30,NO,white,none,male
+P48_S7,P48,48,ER,15-Feb-17,None,None,None,None,None,None,single,30,0,0,0,30,NO,white,none,male
+P48_S8,P48,48,ER,22-Feb-17,None,None,None,None,None,None,single,30,0,0,0,30,NO,white,none,male
+P48_S9,P48,48,ER,27-Feb-17,None,None,None,None,None,None,single,30,0,1,0,30,NO,white,none,male
+P48_S10,P48,48,ER,7-Mar-17,None,None,None,None,None,None,single,30,2,3,0,30,NO,white,none,male
+P48_S11,P48,48,ER,11-Apr-17,None,None,None,None,None,None,single,30,1,3,1,30,NO,white,none,male
+P48_S12,P48,48,ER,22-Jun-17,None,None,None,None,None,None,paired,30,0,0,0,30,NO,white,none,male
+P48_S13,P48,48,ER,27-Dec-17,None,None,None,None,None,None,paired,30,2,4,1,30,NO,white,none,male
+P48_S14,P48,48,ER,2-Jan-18,None,None,None,None,None,None,paired,30,6,23,0,30,NO,white,none,male
+P48_S15,P48,48,ER,8-Jan-18,Coronavirus OC43,None,None,None,None,None,paired,30,22,29,7,30,NO,white,none,male
+P48_S16,P48,48,ER,19-Jan-18,None,None,None,None,None,None,paired,30,4,5,0,30,NO,white,none,male
+P48_S17,P48,48,ER,23-Jan-18,None,None,None,None,None,None,paired,30,1,2,0,30,NO,white,none,male
+P48_S18,P48,48,ER,16-Feb-18,None,None,None,None,None,None,paired,30,0,0,0,30,NO,white,none,male
+P48_S19,P48,48,ER,2-Mar-18,None,None,None,None,None,None,paired,30,5,18,0,30,NO,white,none,male
+P48_S20,P48,48,ER,6-Mar-18,Influenza B,None,None,None,None,None,paired,30,18,NA,2,30,NO,white,none,male
+P48_S21,P48,48,ER,13-Mar-18,None,None,None,None,None,None,paired,30,NA,NA,NA,30,NO,white,none,male
+P49_S1,P49,49,SC,7-Dec-16,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P49_S2,P49,49,SC,21-Dec-16,Rhinovirus C,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P49_S3,P49,49,SC,4-Jan-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P49_S4,P49,49,SC,11-Jan-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P49_S5,P49,49,SC,1-Mar-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,none,male
+P50_S1,P50,50,SC,7-Dec-16,None,None,None,None,None,None,single,18,NA,NA,NA,18,YES,NaN,none,male
+P50_S2,P50,50,SC,14-Dec-16,None,None,None,None,None,None,single,18,NA,NA,NA,18,YES,NaN,none,male
+P50_S3,P50,50,SC,21-Dec-16,Rhinovirus C,None,None,None,None,None,single,18,NA,NA,NA,18,YES,NaN,none,male
+P50_S4,P50,50,SC,4-Jan-17,None,None,None,None,None,None,single,18,0,0,0,18,YES,NaN,none,male
+P50_S5,P50,50,SC,11-Jan-17,Influenza A,None,None,None,None,None,single,18,0,0,0,18,YES,NaN,none,male
+P50_S6,P50,50,SC,18-Jan-17,None,None,None,None,None,None,single,18,0,27,0,18,YES,NaN,none,male
+P50_S7,P50,50,SC,22-Mar-17,None,None,None,None,None,None,single,18,0,0,0,18,YES,NaN,none,male
+P51_S1,P51,51,SC,7-Dec-16,None,None,None,None,None,None,single,15,6,16,0,15,NO,African_American,asthma_allergies,female
+P51_S2,P51,51,SC,4-Jan-17,None,None,None,None,None,None,single,15,2,2,0,15,NO,African_American,asthma_allergies,female
+P51_S3,P51,51,SC,11-Jan-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,asthma_allergies,female
+P51_S4,P51,51,SC,18-Jan-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,asthma_allergies,female
+P51_S5,P51,51,SC,8-Feb-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,asthma_allergies,female
+P51_S6,P51,51,SC,15-Feb-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,asthma_allergies,female
+P51_S7,P51,51,SC,1-Mar-17,Coronavirus HKU1,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,asthma_allergies,female
+P51_S8,P51,51,SC,22-Mar-17,None,None,None,None,None,None,single,15,0,0,0,15,NO,African_American,asthma_allergies,female
+P52_S1,P52,52,D2,13-Jul-17,Parainfluenza 4,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P52_S2,P52,52,D2,27-Jul-17,None,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P52_S3,P52,52,D2,10-Aug-17,Rhinovirus C,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P52_S4,P52,52,D2,24-Aug-17,None,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P52_S5,P52,52,D2,7-Sep-17,None,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P52_S6,P52,52,D2,21-Sep-17,Rhinovirus C,None,None,None,None,None,paired,2,2,2,0,2,YES,AmericanIndian_Alaskannative,none,female
+P53_S1,P53,53,D2,8-Dec-16,None,None,None,None,None,None,single,34,0,0,0,34,NO,Mixed,none,female
+P53_S2,P53,53,D2,22-Dec-16,None,None,None,None,None,None,paired,34,0,0,0,34,NO,Mixed,none,female
+P53_S3,P53,53,D2,12-Jan-17,Respiratory syncytial virus,None,None,None,None,None,single,34,0,0,0,34,NO,Mixed,none,female
+P53_S4,P53,53,D2,2-Feb-17,Coronavirus 229E,None,None,None,None,None,single,34,0,0,0,34,NO,Mixed,none,female
+P53_S5,P53,53,D2,15-Jun-17,None,None,None,None,None,None,paired,34,0,0,0,34,NO,Mixed,none,female
+P54_S1,P54,54,D2,22-Dec-16,Coronavirus OC43,Coronavirus 229E,None,None,None,None,paired,1,11,11,5,1,YES,AmericanIndian_Alaskannative,allergies,female
+P54_S2,P54,54,D2,12-Jan-17,Coronavirus OC43,None,None,None,None,None,single,1,0,3,0,1,YES,AmericanIndian_Alaskannative,allergies,female
+P54_S3,P54,54,D2,19-Jan-17,None,None,None,None,None,None,single,1,6,11,3,1,YES,AmericanIndian_Alaskannative,allergies,female
+P54_S4,P54,54,D2,26-Jan-17,Rhinovirus C,None,None,None,None,None,single,1,5,5,0,1,YES,AmericanIndian_Alaskannative,allergies,female
+P54_S5,P54,54,D2,2-Feb-17,None,None,None,None,None,None,single,1,4,7,0,1,YES,AmericanIndian_Alaskannative,allergies,female
+P54_S6,P54,54,D2,16-Feb-17,None,None,None,None,None,None,single,1,1,1,0,1,YES,AmericanIndian_Alaskannative,allergies,female
+P54_S7,P54,54,D2,14-Dec-17,Coronavirus OC43,None,None,None,None,None,paired,1,12,17,3,1,YES,AmericanIndian_Alaskannative,allergies,female
+P55_S1,P55,55,D2,22-Dec-16,None,None,None,None,None,None,single,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S2,P55,55,D2,12-Jan-17,None,None,None,None,None,None,single,27,0,3,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S3,P55,55,D2,19-Jan-17,None,None,None,None,None,None,single,27,11,17,2,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S4,P55,55,D2,26-Jan-17,Rhinovirus C,None,None,None,None,None,single,27,7,7,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S5,P55,55,D2,2-Feb-17,None,None,None,None,None,None,single,27,1,1,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S6,P55,55,D2,1-Jun-17,Rhinovirus A,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S7,P55,55,D2,15-Jun-17,None,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S8,P55,55,D2,29-Jun-17,Rhinovirus B,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S9,P55,55,D2,13-Jul-17,None,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S10,P55,55,D2,27-Jul-17,Rhinovirus A,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S11,P55,55,D2,10-Aug-17,Rhinovirus A,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S12,P55,55,D2,24-Aug-17,None,None,None,None,None,None,paired,27,0,0,0,27,YES,AmericanIndian_Alaskannative,none,female
+P55_S13,P55,55,D2,21-Sep-17,None,None,None,None,None,None,paired,27,7,7,2,27,YES,AmericanIndian_Alaskannative,none,female
+P56_S1,P56,56,D2,23-Feb-17,Coronavirus OC43,None,None,None,None,None,paired,1,0,0,0,1,YES,AmericanIndian_Alaskannative,none,male
+P56_S2,P56,56,D2,2-Mar-17,Coronavirus OC43,None,None,None,None,None,paired,1,0,0,0,1,YES,AmericanIndian_Alaskannative,none,male
+P56_S3,P56,56,D2,19-Dec-17,Coronavirus OC43,Rhinovirus C,None,None,None,None,paired,1,0,0,0,1,YES,AmericanIndian_Alaskannative,none,male
+P57_S1,P57,57,D2,8-Dec-16,None,None,None,None,None,None,single,25,2,2,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S2,P57,57,D2,16-Feb-17,None,None,None,None,None,None,single,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S3,P57,57,D2,23-Feb-17,None,None,None,None,None,None,single,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S4,P57,57,D2,2-Mar-17,None,None,None,None,None,None,single,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S5,P57,57,D2,9-Mar-17,None,None,None,None,None,None,single,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S6,P57,57,D2,30-Mar-17,None,None,None,None,None,None,single,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S7,P57,57,D2,6-Apr-17,None,None,None,None,None,None,single,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S8,P57,57,D2,1-Jun-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P57_S9,P57,57,D2,15-Jun-17,Rhinovirus A,None,None,None,None,None,paired,25,0,0,0,25,YES,AmericanIndian_Alaskannative,none,female
+P58_S1,P58,58,D2,1-Jun-17,None,None,None,None,None,None,paired,1,0,0,0,1,YES,AmericanIndian_Alaskannative,none,male
+P58_S2,P58,58,D2,15-Jun-17,Rhinovirus A,None,None,None,None,None,paired,1,1,2,0,1,YES,AmericanIndian_Alaskannative,none,male
+P59_S1,P59,59,D2,12-Jan-17,None,None,None,None,None,None,single,3,17,79,0,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S2,P59,59,D2,19-Jan-17,Influenza C,None,None,None,None,None,single,3,111,168,17,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S3,P59,59,D2,2-Feb-17,None,None,None,None,None,None,single,3,50,53,6,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S4,P59,59,D2,16-Feb-17,Influenza C,None,None,None,None,None,single,3,26,48,3,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S5,P59,59,D2,23-Feb-17,None,None,None,None,None,None,single,3,44,60,6,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S6,P59,59,D2,2-Mar-17,None,None,None,None,None,None,paired,3,36,56,5,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S7,P59,59,D2,9-Mar-17,None,None,None,None,None,None,paired,3,29,47,6,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S8,P59,59,D2,16-Mar-17,Coronavirus NL63,None,None,None,None,None,paired,3,22,22,4,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S9,P59,59,D2,23-Mar-17,None,None,None,None,None,None,paired,3,0,4,0,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S10,P59,59,D2,30-Mar-17,Rhinovirus A,Coronavirus OC43,None,None,None,None,paired,3,21,44,4,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S11,P59,59,D2,6-Apr-17,Rhinovirus A,None,None,None,None,None,paired,3,24,24,8,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S12,P59,59,D2,1-Jun-17,None,None,None,None,None,None,paired,3,0,0,0,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S13,P59,59,D2,15-Jun-17,Rhinovirus A,None,None,None,None,None,paired,3,0,2,0,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S14,P59,59,D2,15-Feb-18,None,None,None,None,None,None,paired,3,4,5,1,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S15,P59,59,D2,1-Mar-18,None,None,None,None,None,None,paired,3,26,32,6,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S16,P59,59,D2,8-Mar-18,None,None,None,None,None,None,paired,3,12,18,1,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S17,P59,59,D2,15-Mar-18,Rhinovirus A,None,None,None,None,None,paired,3,11,16,3,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S18,P59,59,D2,22-Mar-18,Rhinovirus C,None,None,None,None,None,paired,3,5,7,1,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S19,P59,59,D2,29-Mar-18,None,None,None,None,None,None,paired,3,3,3,2,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S20,P59,59,D2,5-Apr-18,None,None,None,None,None,None,paired,3,0,0,0,3,YES,AmericanIndian_Alaskannative,eczema,female
+P59_S21,P59,59,D2,12-Apr-18,None,None,None,None,None,None,paired,3,6,NA,0,3,YES,AmericanIndian_Alaskannative,eczema,female
+P60_S1,P60,60,D2,8-Dec-16,None,None,None,None,None,None,single,29,7,42,3,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S2,P60,60,D2,15-Dec-16,Rhinovirus C,None,None,None,None,None,single,29,62,100,8,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S3,P60,60,D2,22-Dec-16,Respiratory syncytial virus B,None,None,None,None,None,single,29,50,55,4,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S4,P60,60,D2,12-Jan-17,None,None,None,None,None,None,single,29,11,27,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S5,P60,60,D2,19-Jan-17,Influenza A,Rhinovirus C,None,None,None,None,single,29,66,127,7,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S6,P60,60,D2,26-Jan-17,Influenza A,None,None,None,None,None,single,29,98,131,22,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S7,P60,60,D2,2-Feb-17,None,None,None,None,None,None,single,29,39,46,7,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S8,P60,60,D2,16-Feb-17,None,None,None,None,None,None,single,29,9,16,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S9,P60,60,D2,23-Feb-17,None,None,None,None,None,None,single,29,16,27,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S10,P60,60,D2,2-Mar-17,None,None,None,None,None,None,single,29,16,26,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S11,P60,60,D2,9-Mar-17,None,None,None,None,None,None,single,29,14,51,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S12,P60,60,D2,16-Mar-17,Coronavirus NL63,None,None,None,None,None,single,29,44,44,10,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S13,P60,60,D2,23-Mar-17,None,None,None,None,None,None,single,29,0,0,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S14,P60,60,D2,30-Mar-17,None,None,None,None,None,None,single,29,0,0,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S15,P60,60,D2,6-Apr-17,Coronavirus OC43,None,None,None,None,None,single,29,2,2,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S16,P60,60,D2,15-Jun-17,None,None,None,None,None,None,paired,29,0,0,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S17,P60,60,D2,7-Sep-17,None,None,None,None,None,None,paired,29,0,0,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S18,P60,60,D2,21-Sep-17,Rhinovirus C,None,None,None,None,None,paired,29,0,0,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S19,P60,60,D2,5-Oct-17,Rhinovirus A,None,None,None,None,None,paired,29,87,87,15,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S20,P60,60,D2,25-Jan-18,None,None,None,None,None,None,paired,29,29,33,6,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S21,P60,60,D2,1-Mar-18,Rhinovirus C,None,None,None,None,None,paired,29,6,6,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S22,P60,60,D2,15-Mar-18,Rhinovirus A,None,None,None,None,None,paired,29,2,11,1,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S23,P60,60,D2,22-Mar-18,None,None,None,None,None,None,paired,29,6,6,1,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S24,P60,60,D2,29-Mar-18,None,None,None,None,None,None,paired,29,0,0,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S25,P60,60,D2,5-Apr-18,Rhinovirus A,None,None,None,None,None,paired,29,0,1,0,29,YES,AmericanIndian_Alaskannative,none,female
+P60_S26,P60,60,D2,12-Apr-18,None,None,None,None,None,None,paired,29,1,NA,0,29,YES,AmericanIndian_Alaskannative,none,female
+P61_S1,P61,61,D2,12-Jan-17,Undefined,None,None,None,None,None,single,0,16,76,0,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S2,P61,61,D2,19-Jan-17,Influenza A,None,None,None,None,None,single,0,107,163,18,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S3,P61,61,D2,2-Feb-17,None,None,None,None,None,None,single,0,52,66,8,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S4,P61,61,D2,16-Feb-17,None,None,None,None,None,None,single,0,33,66,3,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S5,P61,61,D2,23-Feb-17,Undefined,None,None,None,None,None,single,0,59,74,8,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S6,P61,61,D2,2-Mar-17,Bocavirus,WU Polyomavirus,None,None,None,None,single,0,30,42,4,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S7,P61,61,D2,9-Mar-17,None,None,None,None,None,None,single,0,19,37,5,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S8,P61,61,D2,16-Mar-17,None,None,None,None,None,None,single,0,23,23,6,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S9,P61,61,D2,23-Mar-17,Coronavirus NL63,None,None,None,None,None,single,0,0,6,0,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S10,P61,61,D2,30-Mar-17,Coronavirus NL63,None,None,None,None,None,single,0,25,41,6,0,YES,AmericanIndian_Alaskannative,none,male
+P61_S11,P61,61,D2,6-Apr-17,Coronavirus OC43,None,None,None,None,None,single,0,20,20,2,0,YES,AmericanIndian_Alaskannative,none,male
+P62_S1,P62,62,D2,15-Dec-16,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,eczema_allergies,male
+P62_S2,P62,62,D2,22-Dec-16,Coronavirus 229E,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,eczema_allergies,male
+P63_S1,P63,63,D2,7-Sep-17,None,None,None,None,None,None,paired,6,4,5,0,6,YES,AmericanIndian_Alaskannative,none,male
+P63_S2,P63,63,D2,21-Sep-17,Rhinovirus B,None,None,None,None,None,paired,6,5,5,3,6,YES,AmericanIndian_Alaskannative,none,male
+P63_S3,P63,63,D2,5-Oct-17,None,None,None,None,None,None,paired,6,0,1,0,6,YES,AmericanIndian_Alaskannative,none,male
+P64_S1,P64,64,D2,26-Jan-17,Coronavirus OC43,WU Polyomavirus,None,None,None,None,paired,3,7,7,0,3,YES,AmericanIndian_Alaskannative,eczema,male
+P64_S2,P64,64,D2,1-Jun-17,None,None,None,None,None,None,paired,3,0,0,0,3,YES,AmericanIndian_Alaskannative,eczema,male
+P64_S3,P64,64,D2,15-Jun-17,Coronavirus HKU1,None,None,None,None,None,paired,3,0,0,0,3,YES,AmericanIndian_Alaskannative,eczema,male
+P64_S4,P64,64,D2,29-Jun-17,None,None,None,None,None,None,paired,3,0,0,0,3,YES,AmericanIndian_Alaskannative,eczema,male
+P64_S5,P64,64,D2,21-Sep-17,None,None,None,None,None,None,paired,3,1,3,0,3,YES,AmericanIndian_Alaskannative,eczema,male
+P64_S6,P64,64,D2,21-Dec-17,Coronavirus OC43,Rhinovirus A,None,None,None,None,paired,3,5,8,0,3,YES,AmericanIndian_Alaskannative,eczema,male
+P65_S1,P65,65,ER,20-Dec-16,None,None,None,None,None,None,single,49,0,0,0,49,NO,white,hypotyroid,female
+P65_S2,P65,65,ER,13-Feb-17,None,None,None,None,None,None,single,49,0,7,0,49,NO,white,hypotyroid,female
+P65_S3,P65,65,ER,20-Feb-17,None,None,None,None,None,None,single,49,19,26,5,49,NO,white,hypotyroid,female
+P65_S4,P65,65,ER,27-Feb-17,None,None,None,None,None,None,single,49,7,7,1,49,NO,white,hypotyroid,female
+P65_S5,P65,65,ER,6-Mar-17,None,None,None,None,None,None,single,49,0,0,0,49,NO,white,hypotyroid,female
+P65_S6,P65,65,ER,13-Mar-17,None,None,None,None,None,None,single,49,0,0,0,49,NO,white,hypotyroid,female
+P65_S7,P65,65,ER,28-Mar-17,None,None,None,None,None,None,single,49,0,0,0,49,NO,white,hypotyroid,female
+P66_S1,P66,66,SC,21-Dec-16,Rhinovirus B,Undefined,None,None,None,None,single,14,16,18,4,14,YES,NaN,none,male
+P66_S2,P66,66,SC,4-Jan-17,Rhinovirus B,None,None,None,None,None,single,14,0,0,0,14,YES,NaN,none,male
+P66_S3,P66,66,SC,11-Jan-17,Rhinovirus B,None,None,None,None,None,single,14,0,0,0,14,YES,NaN,none,male
+P66_S4,P66,66,SC,18-Jan-17,Coronavirus 229E,None,None,None,None,None,single,14,2,2,0,14,YES,NaN,none,male
+P66_S5,P66,66,SC,15-Feb-17,None,None,None,None,None,None,single,14,0,0,0,14,YES,NaN,none,male
+P67_S1,P67,67,SC,8-Feb-17,Coronavirus OC43,None,None,None,None,None,single,NA,0,0,0,NA,NO,Asian,foodallergies,female
+P67_S2,P67,67,SC,1-Mar-17,Coronavirus OC43,None,None,None,None,None,single,NA,0,0,0,NA,NO,Asian,foodallergies,female
+P67_S3,P67,67,SC,8-Mar-17,Coronavirus OC43,None,None,None,None,None,single,NA,0,0,0,NA,NO,Asian,foodallergies,female
+P67_S4,P67,67,SC,22-Mar-17,None,None,None,None,None,None,single,NA,0,0,0,NA,NO,Asian,foodallergies,female
+P67_S5,P67,67,SC,29-Mar-17,None,None,None,None,None,None,single,NA,0,0,0,NA,NO,Asian,foodallergies,female
+P68_S1,P68,68,D2,22-Dec-16,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S2,P68,68,D2,12-Jan-17,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S3,P68,68,D2,26-Jan-17,Rhinovirus C,None,None,None,None,None,single,5,1,6,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S4,P68,68,D2,16-Feb-17,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S5,P68,68,D2,23-Feb-17,Undefined,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S6,P68,68,D2,2-Mar-17,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S7,P68,68,D2,9-Mar-17,Coronavirus HKU1,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S8,P68,68,D2,16-Mar-17,Undefined,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S9,P68,68,D2,23-Mar-17,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S10,P68,68,D2,30-Mar-17,None,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S11,P68,68,D2,6-Apr-17,Undefined,None,None,None,None,None,single,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S12,P68,68,D2,13-Jul-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S13,P68,68,D2,10-Aug-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S14,P68,68,D2,7-Sep-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S15,P68,68,D2,21-Sep-17,Rhinovirus B,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S16,P68,68,D2,5-Oct-17,Rhinovirus B,None,None,None,None,None,paired,5,7,7,2,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S17,P68,68,D2,12-Oct-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S18,P68,68,D2,19-Oct-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S19,P68,68,D2,7-Dec-17,None,None,None,None,None,None,paired,5,1,1,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S20,P68,68,D2,14-Dec-17,None,None,None,None,None,None,paired,5,0,14,0,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S21,P68,68,D2,21-Dec-17,Rhinovirus C,None,None,None,None,None,paired,5,26,26,4,5,YES,AmericanIndian_Alaskannative,none,female
+P68_S22,P68,68,D2,28-Dec-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S1,P69,69,D2,2-Feb-17,Coronavirus OC43,None,None,None,None,None,paired,5,6,7,1,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S2,P69,69,D2,23-Feb-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S3,P69,69,D2,2-Mar-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S4,P69,69,D2,9-Mar-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S5,P69,69,D2,16-Mar-17,Coronavirus HKU1,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S6,P69,69,D2,30-Mar-17,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S7,P69,69,D2,6-Apr-17,Rhinovirus C,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S8,P69,69,D2,7-Dec-17,Rhinovirus A,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S9,P69,69,D2,14-Dec-17,None,None,None,None,None,None,paired,5,0,11,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S10,P69,69,D2,21-Dec-17,Coronavirus OC43,None,None,None,None,None,paired,5,24,24,4,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S11,P69,69,D2,28-Dec-17,Coronavirus OC43,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P69_S12,P69,69,D2,11-Jan-18,None,None,None,None,None,None,paired,5,0,0,0,5,YES,AmericanIndian_Alaskannative,none,female
+P70_S1,P70,70,D2,12-Jan-17,None,None,None,None,None,None,single,1,0,0,0,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S2,P70,70,D2,26-Jan-17,Coronavirus OC43,Rhinovirus C,None,None,None,None,single,1,7,10,1,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S3,P70,70,D2,2-Feb-17,Coronavirus OC43,None,None,None,None,None,single,1,5,6,1,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S4,P70,70,D2,16-Feb-17,None,None,None,None,None,None,single,1,3,4,1,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S5,P70,70,D2,23-Feb-17,None,None,None,None,None,None,single,1,2,2,1,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S6,P70,70,D2,2-Mar-17,None,None,None,None,None,None,single,1,0,0,0,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S7,P70,70,D2,9-Mar-17,Coronavirus HKU1,Undefined,None,None,None,None,single,1,0,0,0,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S8,P70,70,D2,16-Mar-17,Coronavirus HKU1,None,None,None,None,None,paired,1,0,0,0,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S9,P70,70,D2,23-Mar-17,Bocavirus,None,None,None,None,None,single,1,1,1,0,1,YES,AmericanIndian_Alaskannative,allergies,male
+P70_S10,P70,70,D2,30-Nov-17,Coronavirus HKU1,None,None,None,None,None,paired,1,0,0,0,1,YES,AmericanIndian_Alaskannative,allergies,male
+P71_S1,P71,71,D2,22-Dec-16,None,None,None,None,None,None,single,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S2,P71,71,D2,12-Jan-17,None,None,None,None,None,None,single,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S3,P71,71,D2,19-Jan-17,None,None,None,None,None,None,single,31,8,13,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S4,P71,71,D2,26-Jan-17,None,None,None,None,None,None,single,31,7,10,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S5,P71,71,D2,2-Feb-17,Coronavirus OC43,None,None,None,None,None,single,31,5,10,1,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S6,P71,71,D2,16-Feb-17,None,None,None,None,None,None,single,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S7,P71,71,D2,9-Mar-17,None,None,None,None,None,None,single,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S8,P71,71,D2,16-Mar-17,Undefined,None,None,None,None,None,single,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S9,P71,71,D2,23-Mar-17,Coronavirus HKU1,None,None,None,None,None,single,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S10,P71,71,D2,30-Mar-17,Coronavirus HKU1,None,None,None,None,None,single,31,8,11,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S11,P71,71,D2,6-Apr-17,Rhinovirus C,None,None,None,None,None,single,31,3,3,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S12,P71,71,D2,21-Sep-17,None,None,None,None,None,None,paired,31,0,0,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S13,P71,71,D2,16-Nov-17,None,None,None,None,None,None,paired,31,7,11,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S14,P71,71,D2,30-Nov-17,Rhinovirus B,None,None,None,None,None,paired,31,0,3,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S15,P71,71,D2,7-Dec-17,None,None,None,None,None,None,paired,31,3,6,3,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S16,P71,71,D2,14-Dec-17,None,None,None,None,None,None,paired,31,12,34,3,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S17,P71,71,D2,21-Dec-17,None,None,None,None,None,None,paired,31,46,49,8,31,YES,AmericanIndian_Alaskannative,highBP,female
+P71_S18,P71,71,D2,28-Dec-17,None,None,None,None,None,None,paired,31,4,4,0,31,YES,AmericanIndian_Alaskannative,highBP,female
+P72_S1,P72,72,D2,16-Feb-17,Coronavirus OC43,WU Polyomavirus,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P72_S2,P72,72,D2,23-Feb-17,Coronavirus OC43,WU Polyomavirus,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P72_S3,P72,72,D2,23-Mar-17,Coronavirus OC43,Coronavirus 229E,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P72_S4,P72,72,D2,9-Nov-17,Coronavirus OC43,Rhinovirus C,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P72_S5,P72,72,D2,30-Nov-17,Coronavirus OC43,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P72_S6,P72,72,D2,14-Dec-17,Coronavirus OC43,None,None,None,None,None,paired,2,0,0,0,2,YES,AmericanIndian_Alaskannative,none,female
+P73_S1,P73,73,D2,22-Dec-16,Undefined,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S2,P73,73,D2,12-Jan-17,Undefined,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S3,P73,73,D2,19-Jan-17,Rhinovirus C,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S4,P73,73,D2,26-Jan-17,Rhinovirus C,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S5,P73,73,D2,2-Feb-17,Coronavirus 229E,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S6,P73,73,D2,16-Feb-17,None,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S7,P73,73,D2,16-Mar-17,None,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S8,P73,73,D2,23-Mar-17,None,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S9,P73,73,D2,30-Mar-17,Coronavirus 229E,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S10,P73,73,D2,6-Apr-17,None,None,None,None,None,None,single,24,0,0,0,24,YES,white,none,female
+P73_S11,P73,73,D2,15-Jun-17,None,None,None,None,None,None,paired,24,0,0,0,24,YES,white,none,female
+P73_S12,P73,73,D2,10-Aug-17,None,None,None,None,None,None,paired,24,0,0,0,24,YES,white,none,female
+P73_S13,P73,73,D2,24-Aug-17,None,None,None,None,None,None,paired,24,0,0,0,24,YES,white,none,female
+P73_S14,P73,73,D2,7-Sep-17,Rhinovirus C,None,None,None,None,None,paired,24,0,0,0,24,YES,white,none,female
+P73_S15,P73,73,D2,21-Sep-17,None,None,None,None,None,None,paired,24,0,0,0,24,YES,white,none,female
+P74_S1,P74,74,ER,23-Dec-16,None,None,None,None,None,None,single,34,0,2,0,34,NO,white,none,female
+P74_S2,P74,74,ER,29-Dec-16,Coronavirus 229E,None,None,None,None,None,single,34,8,11,0,34,NO,white,none,female
+P74_S3,P74,74,ER,4-Jan-17,Coronavirus 229E,None,None,None,None,None,single,34,6,6,0,34,NO,white,none,female
+P74_S4,P74,74,ER,17-Jan-17,None,None,None,None,None,None,single,34,0,0,0,34,NO,white,none,female
+P74_S5,P74,74,ER,29-Jan-17,None,None,None,None,None,None,single,34,1,2,0,34,NO,white,none,female
+P74_S6,P74,74,ER,17-Apr-17,None,None,None,None,None,None,single,34,0,0,0,34,NO,white,none,female
+P75_S1,P75,75,D2,26-Jan-17,Coronavirus OC43,None,None,None,None,None,paired,9,2,9,0,9,YES,AmericanIndian_Alaskannative,none,male
+P75_S2,P75,75,D2,6-Apr-17,Coronavirus OC43,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,none,male
+P75_S3,P75,75,D2,28-Dec-17,Coronavirus OC43,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,none,male
+P76_S1,P76,76,ER,8-Jun-17,None,None,None,None,None,None,paired,28,NA,NA,NA,28,NO,white,none,female
+P76_S2,P76,76,ER,22-Jun-17,None,None,None,None,None,None,paired,28,NA,NA,NA,28,NO,white,none,female
+P76_S3,P76,76,ER,5-Jul-17,None,None,None,None,None,None,paired,28,0,0,NA,28,NO,white,none,female
+P76_S4,P76,76,ER,20-Jul-17,None,None,None,None,None,None,paired,28,0,2,0,28,NO,white,none,female
+P76_S5,P76,76,ER,4-Aug-17,Rhinovirus C,None,None,None,None,None,paired,28,0,0,0,28,NO,white,none,female
+P76_S6,P76,76,ER,31-Oct-17,None,None,None,None,None,None,paired,28,0,0,0,28,NO,white,none,female
+P76_S7,P76,76,ER,18-Nov-17,Coronavirus OC43,None,None,None,None,None,paired,28,NA,NA,NA,28,NO,white,none,female
+P76_S8,P76,76,ER,9-Jan-18,None,None,None,None,None,None,paired,28,NA,NA,0,28,NO,white,none,female
+P76_S9,P76,76,ER,2-Apr-18,None,None,None,None,None,None,paired,28,NA,NA,NA,28,NO,white,none,female
+P76_S10,P76,76,ER,10-Apr-18,None,None,None,None,None,None,paired,28,NA,NA,0,28,NO,white,none,female
+P76_S11,P76,76,ER,19-Apr-18,Coronavirus NL63,None,None,None,None,None,paired,28,NA,NA,0,28,NO,white,none,female
+P77_S1,P77,77,ER,8-Feb-17,Coronavirus 229E,None,None,None,None,None,single,26,4,6,1,26,NO,white,asthma,female
+P77_S2,P77,77,ER,20-Feb-17,None,None,None,None,None,None,single,26,0,0,0,26,NO,white,asthma,female
+P77_S3,P77,77,ER,6-Mar-17,None,None,None,None,None,None,single,26,0,0,0,26,NO,white,asthma,female
+P78_S1,P78,78,MC,12-Sep-17,None,None,None,None,None,None,paired,32,0,0,0,32,NO,white,allergies,male
+P78_S2,P78,78,MC,25-Sep-17,None,None,None,None,None,None,paired,32,8,11,2,32,NO,white,allergies,male
+P78_S3,P78,78,MC,3-Oct-17,None,None,None,None,None,None,paired,32,7,22,1,32,NO,white,allergies,male
+P78_S4,P78,78,MC,10-Oct-17,Rhinovirus B,None,None,None,None,None,paired,32,22,36,4,32,NO,white,allergies,male
+P78_S5,P78,78,MC,17-Oct-17,None,None,None,None,None,None,paired,32,20,28,4,32,NO,white,allergies,male
+P78_S6,P78,78,MC,23-Oct-17,None,None,None,None,None,None,paired,32,14,24,2,32,NO,white,allergies,male
+P78_S7,P78,78,MC,1-Nov-17,None,None,None,None,None,None,paired,32,14,20,2,32,NO,white,allergies,male
+P78_S8,P78,78,MC,6-Nov-17,None,None,None,None,None,None,paired,32,8,8,3,32,NO,white,allergies,male
+P78_S9,P78,78,MC,13-Dec-17,None,None,None,None,None,None,paired,32,1,1,0,32,NO,white,allergies,male
+P79_S1,P79,79,SC,1-Mar-17,None,None,None,None,None,None,single,16,0,0,0,16,NO,white,none,male
+P79_S2,P79,79,SC,22-Mar-17,None,None,None,None,None,None,single,16,0,0,0,16,NO,white,none,male
+P79_S3,P79,79,SC,29-Mar-17,Rhinovirus C,None,None,None,None,None,single,16,0,NA,0,16,NO,white,none,male
+P80_S1,P80,80,MC,23-Feb-17,None,None,None,None,None,None,single,23,0,4,0,23,NO,Asian,obesity,male
+P80_S2,P80,80,MC,3-Mar-17,Coronavirus 229E,None,None,None,None,None,single,23,10,10,0,23,NO,Asian,obesity,male
+P80_S3,P80,80,MC,10-Mar-17,None,None,None,None,None,None,single,23,1,1,0,23,NO,Asian,obesity,male
+P80_S4,P80,80,MC,22-Mar-17,None,None,None,None,None,None,single,23,6,6,2,23,NO,Asian,obesity,male
+P80_S5,P80,80,MC,6-Apr-17,None,None,None,None,None,None,single,23,0,24,0,23,NO,Asian,obesity,male
+P80_S6,P80,80,MC,12-Apr-17,Rhinovirus A,None,None,None,None,None,single,23,38,53,12,23,NO,Asian,obesity,male
+P80_S7,P80,80,MC,3-Oct-17,None,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S8,P80,80,MC,10-Oct-17,None,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S9,P80,80,MC,17-Oct-17,Rhinovirus B,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S10,P80,80,MC,24-Oct-17,None,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S11,P80,80,MC,3-Nov-17,None,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S12,P80,80,MC,6-Nov-17,Rhinovirus A,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S13,P80,80,MC,13-Nov-17,None,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S14,P80,80,MC,20-Nov-17,None,None,None,None,None,None,paired,23,0,0,0,23,NO,Asian,obesity,male
+P80_S15,P80,80,MC,20-Apr-18,None,None,None,None,None,None,paired,23,NA,NA,NA,23,NO,Asian,obesity,male
+P81_S1,P81,81,MC,24-Feb-17,None,None,None,None,None,None,single,36,0,1,0,36,YES,Mixed,none,male
+P81_S2,P81,81,MC,3-Mar-17,None,None,None,None,None,None,single,36,1,4,0,36,YES,Mixed,none,male
+P81_S3,P81,81,MC,10-Mar-17,None,None,None,None,None,None,single,36,4,5,0,36,YES,Mixed,none,male
+P81_S4,P81,81,MC,17-Mar-17,None,None,None,None,None,None,single,36,1,2,1,36,YES,Mixed,none,male
+P81_S5,P81,81,MC,14-Apr-17,None,None,None,None,None,None,single,36,0,0,0,36,YES,Mixed,none,male
+P82_S1,P82,82,MC,3-Mar-17,Rhinovirus C,None,None,None,None,None,single,32,0,0,0,32,NO,white,none,female
+P82_S2,P82,82,MC,7-Apr-17,None,None,None,None,None,None,single,32,0,5,0,32,NO,white,none,female
+P83_S1,P83,83,ER,4-Aug-17,None,None,None,None,None,None,paired,34,0,0,0,34,NO,white,none,female
+P83_S2,P83,83,ER,3-Oct-17,None,None,None,None,None,None,paired,34,14,55,0,34,NO,white,none,female
+P83_S3,P83,83,ER,12-Oct-17,Rhinovirus A,None,None,None,None,None,paired,34,48,99,6,34,NO,white,none,female
+P83_S4,P83,83,ER,18-Oct-17,Rhinovirus A,None,None,None,None,None,paired,34,29,38,4,34,NO,white,none,female
+P83_S5,P83,83,ER,25-Oct-17,None,None,None,None,None,None,paired,34,14,15,1,34,NO,white,none,female
+P83_S6,P83,83,ER,8-Nov-17,None,None,None,None,None,None,paired,34,0,1,0,34,NO,white,none,female
+P83_S7,P83,83,ER,26-Dec-17,None,None,None,None,None,None,paired,34,10,19,2,34,NO,white,none,female
+P83_S8,P83,83,ER,8-Jan-18,Coronavirus HKU1,None,None,None,None,None,paired,34,23,45,6,34,NO,white,none,female
+P83_S9,P83,83,ER,16-Jan-18,None,None,None,None,None,None,paired,34,45,67,7,34,NO,white,none,female
+P83_S10,P83,83,ER,23-Jan-18,None,None,None,None,None,None,paired,34,37,53,5,34,NO,white,none,female
+P83_S11,P83,83,ER,9-Feb-18,None,None,None,None,None,None,paired,34,10,22,1,34,NO,white,none,female
+P83_S12,P83,83,ER,16-Feb-18,Coronavirus NL63,None,None,None,None,None,paired,34,16,22,1,34,NO,white,none,female
+P83_S13,P83,83,ER,23-Feb-18,None,None,None,None,None,None,paired,34,12,21,2,34,NO,white,none,female
+P83_S14,P83,83,ER,1-Mar-18,None,None,None,None,None,None,paired,34,18,23,2,34,NO,white,none,female
+P84_S1,P84,84,D2,26-Oct-17,None,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P84_S2,P84,84,D2,2-Nov-17,None,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P84_S3,P84,84,D2,9-Nov-17,Coronavirus OC43,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P84_S4,P84,84,D2,16-Nov-17,Coronavirus OC43,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P84_S5,P84,84,D2,30-Nov-17,None,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P84_S6,P84,84,D2,7-Dec-17,None,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P84_S7,P84,84,D2,14-Dec-17,None,None,None,None,None,None,paired,31,0,0,0,31,NO,AmericanIndian_Alaskannative,none,female
+P85_S1,P85,85,MC,8-Nov-17,None,None,None,None,None,None,paired,32,0,1,0,32,NO,white,none,female
+P85_S2,P85,85,MC,15-Nov-17,None,None,None,None,None,None,paired,32,4,4,1,32,NO,white,none,female
+P85_S3,P85,85,MC,20-Nov-17,None,None,None,None,None,None,paired,32,2,2,0,32,NO,white,none,female
+P85_S4,P85,85,MC,8-Dec-17,None,None,None,None,None,None,paired,32,0,0,0,32,NO,white,none,female
+P85_S5,P85,85,MC,20-Mar-18,None,None,None,None,None,None,paired,32,3,3,3,32,NO,white,none,female
+P86_S1,P86,86,MC,3-Oct-17,None,None,None,None,None,None,paired,25,1,3,0,25,NO,Asian,none,female
+P86_S2,P86,86,MC,11-Oct-17,None,None,None,None,None,None,paired,25,11,34,4,25,NO,Asian,none,female
+P86_S3,P86,86,MC,19-Oct-17,Rhinovirus A,None,None,None,None,None,paired,25,25,26,0,25,NO,Asian,none,female
+P86_S4,P86,86,MC,31-Oct-17,None,None,None,None,None,None,paired,25,1,7,1,25,NO,Asian,none,female
+P86_S5,P86,86,MC,16-Apr-18,None,None,None,None,None,None,paired,25,0,0,0,25,NO,Asian,none,female
+P87_S1,P87,87,MC,14-Mar-18,None,None,None,None,None,None,paired,32,NA,NA,NA,32,YES,AmericanIndian_Alaskannative,none,female
+P87_S2,P87,87,MC,23-Mar-18,None,None,None,None,None,None,paired,32,NA,NA,NA,32,YES,AmericanIndian_Alaskannative,none,female
+P87_S3,P87,87,MC,26-Mar-18,None,None,None,None,None,None,paired,32,2,2,0,32,YES,AmericanIndian_Alaskannative,none,female
+P87_S4,P87,87,MC,13-Apr-18,Rhinovirus B,None,None,None,None,None,paired,32,8,8,0,32,YES,AmericanIndian_Alaskannative,none,female
+P87_S5,P87,87,MC,18-Apr-18,Rhinovirus B,None,None,None,None,None,paired,32,NA,NA,NA,32,YES,AmericanIndian_Alaskannative,none,female
+P88_S1,P88,88,MC,1-Nov-17,None,None,None,None,None,None,paired,24,5,6,1,24,NO,white,none,female
+P88_S2,P88,88,MC,18-Jan-18,None,None,None,None,None,None,paired,24,5,7,2,24,NO,white,none,female
+P88_S3,P88,88,MC,26-Jan-18,None,None,None,None,None,None,paired,24,2,2,0,24,NO,white,none,female
+P88_S4,P88,88,MC,2-Feb-18,None,None,None,None,None,None,paired,24,2,3,0,24,NO,white,none,female
+P88_S5,P88,88,MC,7-Feb-18,None,None,None,None,None,None,paired,24,3,6,0,24,NO,white,none,female
+P88_S6,P88,88,MC,22-Feb-18,Rhinovirus C,None,None,None,None,None,paired,24,6,6,0,24,NO,white,none,female
+P88_S7,P88,88,MC,2-Mar-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,none,female
+P88_S8,P88,88,MC,9-Mar-18,None,None,None,None,None,None,paired,24,13,42,0,24,NO,white,none,female
+P89_S1,P89,89,MC,4-Oct-17,None,None,None,None,None,None,paired,27,0,0,0,27,YES,white,allergies,female
+P89_S2,P89,89,MC,11-Oct-17,None,None,None,None,None,None,paired,27,0,1,0,27,YES,white,allergies,female
+P89_S3,P89,89,MC,18-Oct-17,None,None,None,None,None,None,paired,27,3,3,1,27,YES,white,allergies,female
+P89_S4,P89,89,MC,25-Oct-17,None,None,None,None,None,None,paired,27,0,5,0,27,YES,white,allergies,female
+P89_S5,P89,89,MC,1-Nov-17,Rhinovirus A,None,None,None,None,None,paired,27,10,10,3,27,YES,white,allergies,female
+P89_S6,P89,89,MC,8-Nov-17,None,None,None,None,None,None,paired,27,1,2,0,27,YES,white,allergies,female
+P89_S7,P89,89,MC,13-Nov-17,None,None,None,None,None,None,paired,27,2,2,0,27,YES,white,allergies,female
+P89_S8,P89,89,MC,21-Nov-17,None,None,None,None,None,None,paired,27,0,0,0,27,YES,white,allergies,female
+P89_S9,P89,89,MC,21-Dec-17,None,None,None,None,None,None,paired,27,0,1,0,27,YES,white,allergies,female
+P90_S1,P90,90,D2,5-Oct-17,None,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P90_S2,P90,90,D2,12-Oct-17,None,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P90_S3,P90,90,D2,19-Oct-17,Rhinovirus C,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P90_S4,P90,90,D2,26-Oct-17,None,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P90_S5,P90,90,D2,2-Nov-17,None,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P90_S6,P90,90,D2,9-Nov-17,Coxackievirus,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P90_S7,P90,90,D2,7-Dec-17,Rhinovirus A,None,None,None,None,None,paired,9,0,0,0,9,YES,AmericanIndian_Alaskannative,heartdisease,male
+P91_S1,P91,91,MC,6-Oct-17,None,None,None,None,None,None,paired,20,0,0,0,20,NO,white,none,female
+P91_S2,P91,91,MC,13-Oct-17,None,None,None,None,None,None,paired,20,0,14,0,20,NO,white,none,female
+P91_S3,P91,91,MC,20-Oct-17,Rhinovirus A,None,None,None,None,None,paired,20,27,31,4,20,NO,white,none,female
+P91_S4,P91,91,MC,27-Oct-17,Rhinovirus A,None,None,None,None,None,paired,20,4,15,0,20,NO,white,none,female
+P91_S5,P91,91,MC,1-Nov-17,None,None,None,None,None,None,paired,20,16,22,0,20,NO,white,none,female
+P91_S6,P91,91,MC,10-Nov-17,None,None,None,None,None,None,paired,20,4,4,2,20,NO,white,none,female
+P91_S7,P91,91,MC,17-Nov-17,None,None,None,None,None,None,paired,20,1,15,0,20,NO,white,none,female
+P91_S8,P91,91,MC,1-Dec-17,None,None,None,None,None,None,paired,20,0,0,0,20,NO,white,none,female
+P91_S9,P91,91,MC,6-Apr-18,None,None,None,None,None,None,paired,20,0,0,0,20,NO,white,none,female
+P92_S1,P92,92,MC,12-Dec-17,None,None,None,None,None,None,paired,31,0,0,0,31,YES,white,none,male
+P92_S2,P92,92,MC,20-Dec-17,None,None,None,None,None,None,paired,31,3,14,0,31,YES,white,none,male
+P92_S3,P92,92,MC,27-Dec-17,Respiratory syncytial virus B,None,None,None,None,None,paired,31,25,44,6,31,YES,white,none,male
+P92_S4,P92,92,MC,3-Jan-18,Respiratory syncytial virus B,None,None,None,None,None,paired,31,24,36,1,31,YES,white,none,male
+P92_S5,P92,92,MC,8-Jan-18,Coronavirus HKU1,None,None,None,None,None,paired,31,17,26,3,31,YES,white,none,male
+P92_S6,P92,92,MC,19-Jan-18,None,None,None,None,None,None,paired,31,7,8,0,31,YES,white,none,male
+P92_S7,P92,92,MC,22-Jan-18,None,None,None,None,None,None,paired,31,4,4,0,31,YES,white,none,male
+P92_S8,P92,92,MC,30-Jan-18,None,None,None,None,None,None,paired,31,0,0,0,31,YES,white,none,male
+P92_S9,P92,92,MC,16-Feb-18,None,None,None,None,None,None,paired,31,1,3,1,31,YES,white,none,male
+P92_S10,P92,92,MC,21-Feb-18,None,None,None,None,None,None,paired,31,3,7,0,31,YES,white,none,male
+P92_S11,P92,92,MC,28-Feb-18,Rhinovirus A,None,None,None,None,None,paired,31,4,4,0,31,YES,white,none,male
+P92_S12,P92,92,MC,5-Mar-18,None,None,None,None,None,None,paired,31,0,0,0,31,YES,white,none,male
+P92_S13,P92,92,MC,13-Mar-18,None,None,None,None,None,None,paired,31,0,0,0,31,YES,white,none,male
+P92_S14,P92,92,MC,16-Apr-18,None,None,None,None,None,None,paired,31,0,0,0,31,YES,white,none,male
+P93_S1,P93,93,MC,16-Oct-17,None,None,None,None,None,None,paired,27,2,6,NA,27,NO,white,none,male
+P93_S2,P93,93,MC,24-Oct-17,None,None,None,None,None,None,paired,27,7,8,1,27,NO,white,none,male
+P93_S3,P93,93,MC,3-Nov-17,None,None,None,None,None,None,paired,27,16,29,1,27,NO,white,none,male
+P93_S4,P93,93,MC,6-Nov-17,None,None,None,None,None,None,paired,27,20,29,4,27,NO,white,none,male
+P93_S5,P93,93,MC,17-Nov-17,None,None,None,None,None,None,paired,27,31,51,6,27,NO,white,none,male
+P93_S6,P93,93,MC,20-Nov-17,None,None,None,None,None,None,paired,27,36,50,7,27,NO,white,none,male
+P93_S7,P93,93,MC,1-Dec-17,None,None,None,None,None,None,paired,27,25,32,4,27,NO,white,none,male
+P93_S8,P93,93,MC,8-Dec-17,None,None,None,None,None,None,paired,27,16,33,2,27,NO,white,none,male
+P93_S9,P93,93,MC,12-Dec-17,None,None,None,None,None,None,paired,27,29,42,3,27,NO,white,none,male
+P93_S10,P93,93,MC,12-Feb-18,None,None,None,None,None,None,paired,27,35,40,4,27,NO,white,none,male
+P94_S1,P94,94,MC,12-Jan-18,None,None,None,None,None,None,paired,26,0,0,0,26,NO,white,none,male
+P94_S2,P94,94,MC,24-Jan-18,None,None,None,None,None,None,paired,26,0,0,0,26,NO,white,none,male
+P94_S3,P94,94,MC,16-Feb-18,None,None,None,None,None,None,paired,26,2,2,0,26,NO,white,none,male
+P95_S1,P95,95,MC,8-Nov-17,None,None,None,None,None,None,paired,41,0,1,0,41,NO,white,allergies,male
+P95_S2,P95,95,MC,27-Dec-17,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S3,P95,95,MC,3-Jan-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S4,P95,95,MC,12-Jan-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S5,P95,95,MC,18-Jan-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S6,P95,95,MC,24-Jan-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S7,P95,95,MC,14-Feb-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S8,P95,95,MC,22-Feb-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S9,P95,95,MC,9-Mar-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S10,P95,95,MC,14-Mar-18,None,None,None,None,None,None,paired,41,2,10,0,41,NO,white,allergies,male
+P95_S11,P95,95,MC,23-Mar-18,Rhinovirus C,None,None,None,None,None,paired,41,5,5,1,41,NO,white,allergies,male
+P95_S12,P95,95,MC,28-Mar-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S13,P95,95,MC,3-Apr-18,None,None,None,None,None,Mammarenovirus,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S14,P95,95,MC,10-Apr-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S15,P95,95,MC,18-Apr-18,None,None,None,None,None,None,paired,41,0,0,0,41,NO,white,allergies,male
+P95_S16,P95,95,MC,NaT,None,None,None,None,None,None,paired,41,NA,NA,NA,41,NO,white,allergies,male
+P96_S1,P96,96,D1,27-Nov-17,Coronavirus HKU1,Respiratory syncytial virus B,Rhinovirus B,Adenovirus,WU Polyomavirus,None,paired,3,26,36,4,3,NO,African_American,none,male
+P96_S2,P96,96,D1,8-Dec-17,Coronavirus HKU1,None,None,None,None,None,paired,3,14,23,2,3,NO,African_American,none,male
+P96_S3,P96,96,D1,11-Dec-17,Coronavirus HKU1,None,None,None,None,None,paired,3,16,23,2,3,NO,African_American,none,male
+P96_S4,P96,96,D1,23-Jan-18,Coronavirus HKU1,None,None,None,None,None,paired,3,6,10,1,3,NO,African_American,none,male
+P97_S1,P97,97,D2,16-Jan-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S2,P97,97,D2,22-Jan-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S3,P97,97,D2,29-Jan-18,Rhinovirus C,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S4,P97,97,D2,5-Feb-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S5,P97,97,D2,12-Feb-18,Rhinovirus C,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S6,P97,97,D2,21-Feb-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S7,P97,97,D2,26-Feb-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S8,P97,97,D2,5-Mar-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S9,P97,97,D2,12-Mar-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S10,P97,97,D2,19-Mar-18,Rhinovirus A,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S11,P97,97,D2,26-Mar-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S12,P97,97,D2,13-Apr-18,Rhinovirus C,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S13,P97,97,D2,17-Apr-18,None,None,None,None,None,None,paired,2,0,0,0,2,YES,Mixed,none,female
+P97_S14,P97,97,D2,27-Dec-18,None,None,None,None,None,None,paired,2,0,NA,0,2,YES,Mixed,none,female
+P98_S1,P98,98,D2,27-Dec-17,None,None,None,None,None,None,paired,6,0,0,0,6,YES,Mixed,none,male
+P98_S2,P98,98,D2,5-Mar-18,None,None,None,None,None,None,paired,6,0,1,0,6,YES,Mixed,none,male
+P98_S3,P98,98,D2,12-Mar-18,None,None,None,None,None,None,paired,6,1,1,0,6,YES,Mixed,none,male
+P98_S4,P98,98,D2,19-Mar-18,Rhinovirus A,None,None,None,None,None,paired,6,0,0,0,6,YES,Mixed,none,male
+P98_S5,P98,98,D2,26-Mar-18,Rhinovirus A,None,None,None,None,None,paired,6,0,0,0,6,YES,Mixed,none,male
+P98_S6,P98,98,D2,13-Apr-18,Rhinovirus C,None,None,None,None,None,paired,6,0,NA,0,6,YES,Mixed,none,male
+P98_S7,P98,98,D2,17-Apr-18,None,None,None,None,None,None,paired,6,NA,NA,NA,6,YES,Mixed,none,male
+P99_S1,P99,99,D2,3-Nov-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S2,P99,99,D2,10-Nov-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S3,P99,99,D2,17-Nov-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S4,P99,99,D2,20-Nov-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S5,P99,99,D2,27-Nov-17,Rhinovirus A,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S6,P99,99,D2,11-Dec-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S7,P99,99,D2,18-Dec-17,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S8,P99,99,D2,22-Jan-18,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S9,P99,99,D2,21-Feb-18,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S10,P99,99,D2,26-Feb-18,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S11,P99,99,D2,5-Mar-18,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S12,P99,99,D2,12-Mar-18,None,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S13,P99,99,D2,19-Mar-18,Rhinovirus A,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S14,P99,99,D2,26-Mar-18,Rhinovirus A,None,None,None,None,None,paired,25,0,0,0,25,YES,Mixed,none,female
+P99_S15,P99,99,D2,13-Apr-18,Rhinovirus C,None,None,None,None,None,paired,25,0,NA,0,25,YES,Mixed,none,female
+P100_S1,P100,100,D2,3-Nov-17,None,None,None,None,None,None,paired,1,0,0,0,1,YES,Mixed,none,female
+P100_S2,P100,100,D2,6-Mar-18,None,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P100_S3,P100,100,D2,14-Mar-18,None,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P100_S4,P100,100,D2,23-Mar-18,Rhinovirus A,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P100_S5,P100,100,D2,26-Mar-18,None,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P100_S6,P100,100,D2,6-Apr-18,None,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P100_S7,P100,100,D2,13-Apr-18,None,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P100_S8,P100,100,D2,20-Apr-18,None,None,None,None,None,None,paired,1,NA,NA,NA,1,YES,Mixed,none,female
+P101_S1,P101,101,D2,3-Nov-17,None,None,None,None,None,None,paired,35,0,0,0,35,YES,Mixed,none,female
+P101_S2,P101,101,D2,27-Nov-17,None,None,None,None,None,None,paired,35,0,0,0,35,YES,Mixed,none,female
+P101_S3,P101,101,D2,4-Dec-17,None,None,None,None,None,None,paired,35,0,20,0,35,YES,Mixed,none,female
+P101_S4,P101,101,D2,11-Dec-17,None,None,None,None,None,None,paired,35,39,43,9,35,YES,Mixed,none,female
+P101_S5,P101,101,D2,18-Dec-17,None,None,None,None,None,None,paired,35,4,4,0,35,YES,Mixed,none,female
+P101_S6,P101,101,D2,26-Dec-17,None,None,None,None,None,None,paired,35,0,0,0,35,YES,Mixed,none,female
+P102_S1,P102,102,SC,29-Nov-17,None,None,None,None,None,None,paired,14,0,0,0,14,YES,Mixed,none,male
+P102_S2,P102,102,SC,3-Jan-18,Rhinovirus C,None,None,None,None,None,paired,14,0,0,0,14,YES,Mixed,none,male
+P103_S1,P103,103,MC,12-Dec-17,None,None,None,None,None,None,paired,24,10,10,4,24,NO,white,infections,female
+P103_S2,P103,103,MC,23-Mar-18,None,None,None,None,None,None,paired,24,0,0,0,24,NO,white,infections,female
+P103_S3,P103,103,MC,30-Mar-18,None,None,None,None,None,None,paired,24,0,20,0,24,NO,white,infections,female
+P103_S4,P103,103,MC,6-Apr-18,Rhinovirus B,None,None,None,None,None,paired,24,29,40,6,24,NO,white,infections,female
+P103_S5,P103,103,MC,10-Apr-18,Rhinovirus B,None,None,None,None,None,paired,24,20,26,3,24,NO,white,infections,female
+P103_S6,P103,103,MC,18-Apr-18,Rhinovirus B,None,None,None,None,None,paired,24,6,6,1,24,NO,white,infections,female
+P104_S1,P104,104,ER,19-Dec-17,None,None,None,None,None,None,paired,28,12,35,1,28,YES,NaN,none,male
+P104_S2,P104,104,ER,30-Jan-18,None,None,None,None,None,None,paired,28,59,80,10,28,YES,NaN,none,male
+P104_S3,P104,104,ER,6-Feb-18,None,None,None,None,None,None,paired,28,31,42,0,28,YES,NaN,none,male
+P104_S4,P104,104,ER,14-Feb-18,Rhinovirus C,None,None,None,None,None,paired,28,5,12,1,28,YES,NaN,none,male
+P104_S5,P104,104,ER,23-Feb-18,None,None,None,None,None,None,paired,28,4,6,0,28,YES,NaN,none,male
