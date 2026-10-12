@@ -185,6 +185,11 @@ R["carbon"]["decisions"] = {"pos_first": round(float(first[y == 1].mean()), 3), 
                             "flag_ton": round(float(np.mean([any(f == "Острый тонзиллит" for f, _ in dd.flags) for dd in dec])), 3),
                             "flag_ar": round(float(np.mean([any(f == "Аллергический ринит" for f, _ in dd.flags) for dd in dec])), 3),
                             "atypical": round(float(np.mean([dd.status == "atypical" for dd in dec])), 3)}
+diag = np.array([dd.diagnosis for dd in dec], dtype=object)
+orvi_in = np.array(["ОРВИ" in dd.answer() for dd in dec])
+R["carbon"]["decisions"].update({"pos_orvi_first": round(float(np.mean(diag[y == 1] == "ОРВИ")), 3),
+                                 "neg_orvi_first": round(float(np.mean(diag[y == 0] == "ОРВИ")), 3),
+                                 "neg_orvi_in": round(float(orvi_in[y == 0].mean()), 3)})   # таблица 9
 Eo = m.ETALONS.copy(); Eo[2] = m.COVID_OMICRON
 R["carbon"]["omicron"] = round(roc_auc_score(y, cb.disease_score(cb.similarities(X, Eo), cb.COVID)), 3)
 pr = cross_val_predict(LogisticRegression(max_iter=2000, class_weight="balanced"), X[:, :7], y,

@@ -788,7 +788,10 @@
    "neg_in": 0.343,
    "flag_ton": 0.37,
    "flag_ar": 0.0,
-   "atypical": 0.0
+   "atypical": 0.0,
+   "pos_orvi_first": 0.68,
+   "neg_orvi_first": 0.838,
+   "neg_orvi_in": 0.913
   },
   "omicron": 0.558,
   "logreg": [
