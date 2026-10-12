@@ -36,11 +36,9 @@ python -m venv .venv
 | `textbook_cases.py`, `data/textbook_cases.json` | ситуационные задачи и их проверка |
 | `carbon.py` | загрузка данных Carbon Health |
 | `compute_all.py`, `make_figures.py` | все расчёты и рисунки глав 2 и 3 |
-| `check_geismar.py` | проверка отклонённого варианта эталонов по данным Geismar et al. (2023) |
 | `make_screenshots.py` | снимки экрана интерфейса для работы |
 
 ## Данные
 
 - **Virome of Manhattan** (Galanti et al., PLOS Biology, 2024): метаданные мазков и дневники симптомов лежат в `data/virome`.
 - **Carbon Health** в репозиторий не включены. Их нужно скачать из https://github.com/mdcollab/covidclinicaldata (папка `data`) и положить CSV-файлы в `data/carbonhealth`.
-- **Geismar et al. (2023)**: частоты симптомов, нужные `check_geismar.py`, взяты из таблицы 1 статьи и записаны в самом скрипте.
