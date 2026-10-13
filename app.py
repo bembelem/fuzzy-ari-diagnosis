@@ -98,7 +98,7 @@ if page == "Диагностика":
                  "Требуется очное обследование.")
     elif d.status == "rule":
         st.error(f"Картина нетипична для ОРВИ, гриппа и COVID-19. Подозрение: **{d.diagnosis}**, требуется осмотр.")
-    elif d.status == "confident":
+    elif d.status == "confident" or not d.cannot_exclude:   # остальные заболевания ниже порога α: исключать нечего
         st.success(f"Предварительный диагноз: **{d.diagnosis}**")
     else:
         st.warning(f"Предварительный диагноз: **{d.diagnosis}**  \n"
